@@ -368,18 +368,18 @@
             color: #FFFFFF;
             text-decoration: none;
         }
-        .submit4{
-            display: inline-block;
-        }
+        /*.submit{*/
+        /*    display: inline-block;*/
+        /*}*/
 
-        .submit-message{
-            display: inline-block;
-            font-family: IBM Plex Sans;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 40px;
-            letter-spacing: 0.01em;
-        }
+        /*.submit-message{*/
+        /*    display: inline-block;*/
+        /*    font-family: IBM Plex Sans;*/
+        /*    font-size: 24px;*/
+        /*    font-weight: 400;*/
+        /*    line-height: 40px;*/
+        /*    letter-spacing: 0.01em;*/
+        /*}*/
 
 
         .question1 {
@@ -484,16 +484,24 @@
             </div>
             <br>
             <br>
+            <form id="form1">
             <div>
                 <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>
-
                 <div class="list-container">
                     <p class='format'>Select one</p>
 
-                    <input type="radio" name="myRadio" value="Option 1"> Temperature<br>
-                    <input type="radio" name="myRadio" value="Option 2"> Humidity<br>
-                    <input type="radio" name="myRadio" value="Option 3"> Pressure<br>
-                    <input type="radio" name="myRadio" value="Option 4"> Rain<br>
+                    <label>
+                        <input type="radio" name="myRadio" value="Option 1">
+                    </label> Temperature<br>
+                    <label>
+                        <input type="radio" name="myRadio" value="Option 2">
+                    </label> Humidity<br>
+                    <label>
+                        <input type="radio" name="myRadio" value="Option 3">
+                    </label> Pressure<br>
+                    <label>
+                        <input type="radio" name="myRadio" value="Option 4">
+                    </label> Rain<br>
                 </div>
                 <br><br>
 
@@ -546,10 +554,18 @@
 
                 <div class="list-container">
                     <p class="format">Select one</p>
-                    <input type="radio" name="myRadio3" value="Option 9"> Temperature<br>
-                    <input type="radio" name="myRadio3" value="Option 10"> Humidity<br>
-                    <input type="radio" name="myRadio3" value="Option 11"> Pressure<br>
-                    <input type="radio" name="myRadio3" value="Option 12"> Rain<br>
+                    <label>
+                        <input type="radio" name="myRadio1" value="Option 5">
+                    </label> Temperature<br>
+                    <label>
+                        <input type="radio" name="myRadio1" value="Option 6">
+                    </label> Humidity<br>
+                    <label>
+                        <input type="radio" name="myRadio1" value="Option 7">
+                    </label> Pressure<br>
+                    <label>
+                        <input type="radio" name="myRadio1" value="Option 8">
+                    </label> Rain<br>
                 </div>
                 <div class="popup" id="hiddenDiv1">
                     <img src="if.jpeg" class="popup6">
@@ -572,9 +588,8 @@
                     verify<br> further with median values?
                 </p>
                 <div>
-                    <a class="custom-button submit4" href="javascript:void(0)" role="button">
-                        I want to submit
-                    </a>
+                    <input type="submit" class="custom-button sub" name="submit_answer1" value="I want to submit" href="javascript:void(0)" >
+
                     <p class="submit-message" style="color: green; display: none;"><b>Submitted</b>
                     </p>
                     <br><br>
@@ -583,7 +598,9 @@
                     </a>
 
                 </div>
+
             </div>
+
             <div class='question3'>
                 <br>
                 <p class='pdesign'>Now look into the reference chart given below. In the chart there are four
@@ -597,7 +614,7 @@
                         <th class="design224">Lowest Probability</th>
                     </tr>
                     <tr>
-                        <td class="design21">Temparature</td>
+                        <td class="design21">Temperature</td>
                         <td class="design21">9.4 - 25.3</td>
                         <td class="design21">27.3 - 55.15</td>
                         <td class="design21">3.4 - 9.3</td>
@@ -652,10 +669,18 @@
 
                 <div class="list-container">
                     <p class="format">Select one</p>
-                    <input type="radio" name="myRadio4" value="Option 14"> Temperature<br>
-                    <input type="radio" name="myRadio4" value="Option 15"> Humidity<br>
-                    <input type="radio" name="myRadio4" value="Option 16"> Pressure<br>
-                    <input type="radio" name="myRadio4" value="Option 17"> Rain<br>
+                    <label>
+                        <input type="radio" name="myRadio2" value="Option 9">
+                    </label> Temperature<br>
+                    <label>
+                        <input type="radio" name="myRadio2" value="Option 10">
+                    </label> Humidity<br>
+                    <label>
+                        <input type="radio" name="myRadio2" value="Option 11">
+                    </label> Pressure<br>
+                    <label>
+                        <input type="radio" name="myRadio2" value="Option 12">
+                    </label> Rain<br>
                 </div>
                 <div class="popup" id="hiddenDiv2">
                     <img src="compare.jpeg" class="popup7">
@@ -676,9 +701,7 @@
                 <p class="pdesign2"><b>Are you sure about your selection ?</b>
                 </p><br>
                 <div>
-                    <a class="custom-button submit5" href="javascript:void(0)" role="button">
-                        I want to submit
-                    </a>
+                    <input type="submit" class="custom-button sub1" name="submit_answer2" value="I want to submit" href="javascript:void(0)" >
                     <p class="submit-message1" style="color: green; display: none;"><b>Submitted</b>
                     </p>
                     <br><br>
@@ -688,12 +711,9 @@
 
 
                 </div>
+
             </div>
-            <br><br>
-
-            <!-- <a class="btn btn-primary align-right" href="page5.html" role="button" id="nextStepButton">Next Step</a> -->
-
-
+            </form>
         </div>
     </div>
 </div>
@@ -790,35 +810,6 @@
         });
     })
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const submitButton = document.querySelector('.custom-button.submit');
-        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
-        const radioButtons = document.querySelectorAll('input[type="radio"]');
-        const feedback = document.getElementById('feedback');
-
-        function handleOptionSelection() {
-            const selectedOption1 = document.querySelector('input[name="myRadio1"]:checked');
-
-            if (selectedOption1 && selectedOption1.value === "Option 1") {
-                feedback.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Next Training Task';
-                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
-                // You can choose to proceed or take any other action here.
-            } else {
-                feedback.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
-                // You can reset the radio buttons to unselected here if needed.
-                setTimeout(function () {
-                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
-                }, 2000); // Adjust the delay (in milliseconds) as needed.
-            }
-        }
-
-        submitButton.addEventListener('click', handleOptionSelection);
-        nextStepButton.addEventListener('click', function (e) {
-            if (nextStepButton.classList.contains('disabled')) {
-                e.preventDefault();
-            }
-        });
-    });
 
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -848,37 +839,7 @@
         });
     })
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const submitButton1 = document.querySelector('.custom-button.submit1');
-        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
-        const radioButtons1 = document.querySelectorAll('input[type="radio"]');
-        const feedback1 = document.getElementById('feedback1');
 
-        // Disable the last "Next Step" button initially
-        nextStepButton.classList.add('disabled');
-
-        submitButton1.addEventListener('click', function () {
-            const selectedOption2 = document.querySelector('input[name="myRadio2"]:checked');
-
-            if (selectedOption2 && selectedOption2.value === "Option 5") {
-                feedback1.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Next Training Task';
-                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
-                // You can choose to proceed or take any other action here.
-            } else {
-                feedback1.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
-                // You can reset the radio buttons to unselected here if needed.
-                setTimeout(function () {
-                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
-                }, 2000); // Adjust the delay (in milliseconds) as needed.
-            }
-        });
-        nextStepButton.addEventListener('click', function (e) {
-            if (nextStepButton.classList.contains('disabled')) {
-                e.preventDefault();
-            }
-        });
-
-    });
 
     document.addEventListener("DOMContentLoaded", function () {
         const startOverButton = document.getElementById('startOverButton');
@@ -892,106 +853,10 @@
         });
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const showNextButton1 = document.getElementById("showNext1");
-        const question2 = document.querySelector(".question2");
-        const error1Text = document.getElementById("error1");
 
-        showNextButton1.addEventListener("click", () => {
-            const selectedOption1 = document.querySelector('input[name="myRadio3"]:checked');
-            if (selectedOption1) {
-                // If an option is selected, perform the further functionality
-                question2.style.display = "block";
-                error1Text.style.display = "none"; // Hide the error message if shown
-            } else {
-                // Display the error message if no option is selected
-                error1Text.style.display = "block";
-            }
-        });
-    })
-    document.addEventListener("DOMContentLoaded", function () {
-        const showNextButton1 = document.getElementById("showNext3");
-        const question2 = document.querySelector(".question4");
-        const error2Text = document.getElementById("error2");
-
-        showNextButton1.addEventListener("click", () => {
-            const selectedOption3 = document.querySelector('input[name="myRadio4"]:checked');
-            if (selectedOption3) {
-                // If an option is selected, perform the further functionality
-                question2.style.display = "block";
-                error2Text.style.display = "none"; // Hide the error message if shown
-            } else {
-                // Display the error message if no option is selected
-                error2Text.style.display = "block";
-            }
-        });
-    })
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const submitButton2 = document.querySelector('.custom-button.submit2');
-        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
-        const radioButtons2 = document.querySelectorAll('input[type="radio"]');
-        const feedback2 = document.getElementById('feedback2');
-
-        // Disable the last "Next Step" button initially
-        nextStepButton.classList.add('disabled');
-
-        submitButton2.addEventListener('click', function () {
-            const selectedOption3 = document.querySelector('input[name="myRadio3"]:checked');
-
-            if (selectedOption3 && selectedOption3.value === "Option 11") {
-                feedback2.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Main Training Task';
-                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
-                // You can choose to proceed or take any other action here.
-            } else {
-                feedback2.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
-                // You can reset the radio buttons to unselected here if needed.
-                setTimeout(function () {
-                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
-                }, 2000); // Adjust the delay (in milliseconds) as needed.
-            }
-        });
-        nextStepButton.addEventListener('click', function (e) {
-            if (nextStepButton.classList.contains('disabled')) {
-                e.preventDefault();
-            }
-        });
-
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        const submitButton3 = document.querySelector('.custom-button.submit3');
-        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
-        const radioButtons3 = document.querySelectorAll('input[type="radio"]');
-        const feedback2 = document.getElementById('feedback3');
-
-        // Disable the last "Next Step" button initially
-        nextStepButton.classList.add('disabled');
-
-        submitButton3.addEventListener('click', function () {
-            const selectedOption4 = document.querySelector('input[name="myRadio4"]:checked');
-
-            if (selectedOption4 && selectedOption4.value === "Option 16") {
-                feedback2.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Main Task';
-                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
-                // You can choose to proceed or take any other action here.
-            } else {
-                feedback2.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
-                // You can reset the radio buttons to unselected here if needed.
-                setTimeout(function () {
-                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
-                }, 2000); // Adjust the delay (in milliseconds) as needed.
-            }
-        });
-        nextStepButton.addEventListener('click', function (e) {
-            if (nextStepButton.classList.contains('disabled')) {
-                e.preventDefault();
-            }
-        });
-
-    });
     document.addEventListener("DOMContentLoaded", function () {
         // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit4");
+        const submitButton = document.querySelector(".sub");
 
         // Get the submit message element
         const submitMessage = document.querySelector(".submit-message");
@@ -1009,7 +874,7 @@
     });
     document.addEventListener("DOMContentLoaded", function () {
         // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit5");
+        const submitButton = document.querySelector(".sub1");
 
         // Get the submit message element
         const submitMessage = document.querySelector(".submit-message1");
@@ -1022,116 +887,6 @@
             // Redirect to the desired page after a short delay
             setTimeout(function () {
                 window.location.href = "mainTask2.blade.php";
-            }, 2000); // Adjust the delay time (in milliseconds) as needed
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit6");
-
-        // Get the submit message element
-        const submitMessage = document.querySelector(".submit-message2");
-
-        // Add a click event listener to the button
-        submitButton.addEventListener("click", function () {
-            // Display the message
-            submitMessage.style.display = "block";
-
-            // Redirect to the desired page after a short delay
-            setTimeout(function () {
-                window.location.href = "mainTask3.blade.php";
-            }, 2000); // Adjust the delay time (in milliseconds) as needed
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit7");
-
-        // Get the submit message element
-        const submitMessage = document.querySelector(".submit-message3");
-
-        // Add a click event listener to the button
-        submitButton.addEventListener("click", function () {
-            // Display the message
-            submitMessage.style.display = "block";
-
-            // Redirect to the desired page after a short delay
-            setTimeout(function () {
-                window.location.href = "mainTask3.blade.php";
-            }, 2000); // Adjust the delay time (in milliseconds) as needed
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit8");
-
-        // Get the submit message element
-        const submitMessage = document.querySelector(".submit-message4");
-
-        // Add a click event listener to the button
-        submitButton.addEventListener("click", function () {
-            // Display the message
-            submitMessage.style.display = "block";
-
-            // Redirect to the desired page after a short delay
-            setTimeout(function () {
-                window.location.href = "" +
-                    "" +
-                    "mainTask4.blade.php";
-            }, 2000); // Adjust the delay time (in milliseconds) as needed
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit9");
-
-        // Get the submit message element
-        const submitMessage = document.querySelector(".submit-message5");
-
-        // Add a click event listener to the button
-        submitButton.addEventListener("click", function () {
-            // Display the message
-            submitMessage.style.display = "block";
-
-            // Redirect to the desired page after a short delay
-            setTimeout(function () {
-                window.location.href = "mainTask4.blade.php";
-            }, 2000); // Adjust the delay time (in milliseconds) as needed
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit10");
-
-        // Get the submit message element
-        const submitMessage = document.querySelector(".submit-message6");
-
-        // Add a click event listener to the button
-        submitButton.addEventListener("click", function () {
-            // Display the message
-            submitMessage.style.display = "block";
-
-            // Redirect to the desired page after a short delay
-            setTimeout(function () {
-                window.location.href = "survey.blade.php";
-            }, 2000); // Adjust the delay time (in milliseconds) as needed
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "I want to submit" button by its class name
-        const submitButton = document.querySelector(".submit11");
-
-        // Get the submit message element
-        const submitMessage = document.querySelector(".submit-message7");
-
-        // Add a click event listener to the button
-        submitButton.addEventListener("click", function () {
-            // Display the message
-            submitMessage.style.display = "block";
-
-            // Redirect to the desired page after a short delay
-            setTimeout(function () {
-                window.location.href = "survey.blade.php";
             }, 2000); // Adjust the delay time (in milliseconds) as needed
         });
     });

@@ -208,44 +208,94 @@
                     <form id="surveyForm">
                         <p class="image1"><img src="1.jpeg"></p>
                         <p class="list1">
-                            <input type="radio" name="myRadio" value="Option 1"> 1
-                            <input type="radio" name="myRadio" value="Option 2"> 2
-                            <input type="radio" name="myRadio" value="Option 3"> 3
-                            <input type="radio" name="myRadio" value="Option 4"> 4
-                            <input type="radio" name="myRadio" value="Option 5"> 5
+                            <label>
+                                <input type="radio" name="myRadio" value="Option 1">
+                            </label> 1
+                            <label>
+                                <input type="radio" name="myRadio" value="Option 2">
+                            </label> 2
+                            <label>
+                                <input type="radio" name="myRadio" value="Option 3">
+                            </label> 3
+                            <label>
+                                <input type="radio" name="myRadio" value="Option 4">
+                            </label> 4
+                            <label>
+                                <input type="radio" name="myRadio" value="Option 5">
+                            </label> 5
                         </p>
                         <br><br><br>
                         <p class="image2"><img src="2.jpeg"></p>
                         <p class="list2">
-                            <input type="radio" name="myRadio1" value="Option 1"> 1
-                            <input type="radio" name="myRadio1" value="Option 2"> 2
-                            <input type="radio" name="myRadio1" value="Option 3"> 3
-                            <input type="radio" name="myRadio1" value="Option 4"> 4
-                            <input type="radio" name="myRadio1" value="Option 5"> 5
+                            <label>
+                                <input type="radio" name="myRadio1" value="Option 1">
+                            </label> 1
+                            <label>
+                                <input type="radio" name="myRadio1" value="Option 2">
+                            </label> 2
+                            <label>
+                                <input type="radio" name="myRadio1" value="Option 3">
+                            </label> 3
+                            <label>
+                                <input type="radio" name="myRadio1" value="Option 4">
+                            </label> 4
+                            <label>
+                                <input type="radio" name="myRadio1" value="Option 5">
+                            </label> 5
                         </p><br><br><br>
                         <p class="image3"><img src="3.jpeg"></p>
                         <p class="list3">
-                            <input type="radio" name="myRadio2" value="Option 5"> 1
-                            <input type="radio" name="myRadio2" value="Option 6"> 2
-                            <input type="radio" name="myRadio2" value="Option 7"> 3
-                            <input type="radio" name="myRadio2" value="Option 8"> 4
-                            <input type="radio" name="myRadio2" value="Option 9"> 5
+                            <label>
+                                <input type="radio" name="myRadio2" value="Option 5">
+                            </label> 1
+                            <label>
+                                <input type="radio" name="myRadio2" value="Option 6">
+                            </label> 2
+                            <label>
+                                <input type="radio" name="myRadio2" value="Option 7">
+                            </label> 3
+                            <label>
+                                <input type="radio" name="myRadio2" value="Option 8">
+                            </label> 4
+                            <label>
+                                <input type="radio" name="myRadio2" value="Option 9">
+                            </label> 5
                         </p><br><br><br>
                         <p class="image4"><img src="4.jpeg"></p>
                         <p class="list4">
-                            <input type="radio" name="myRadio3" value="Option 10"> 1
-                            <input type="radio" name="myRadio3" value="Option 11"> 2
-                            <input type="radio" name="myRadio3" value="Option 12"> 3
-                            <input type="radio" name="myRadio3" value="Option 13"> 4
-                            <input type="radio" name="myRadio3" value="Option 14"> 5
+                            <label>
+                                <input type="radio" name="myRadio3" value="Option 10">
+                            </label> 1
+                            <label>
+                                <input type="radio" name="myRadio3" value="Option 11">
+                            </label> 2
+                            <label>
+                                <input type="radio" name="myRadio3" value="Option 12">
+                            </label> 3
+                            <label>
+                                <input type="radio" name="myRadio3" value="Option 13">
+                            </label> 4
+                            <label>
+                                <input type="radio" name="myRadio3" value="Option 14">
+                            </label> 5
                         </p><br><br><br>
                         <p class="image5"><img src="5.jpeg"></p>
                         <p class="list5">
-                            <input type="radio" name="myRadio4" value="Option 15"> 1
-                            <input type="radio" name="myRadio4" value="Option 16"> 2
-                            <input type="radio" name="myRadio4" value="Option 17"> 3
-                            <input type="radio" name="myRadio4" value="Option 18"> 4
-                            <input type="radio" name="myRadio4" value="Option 19"> 5
+                            <label>
+                                <input type="radio" name="myRadio4" value="Option 15">
+                            </label> 1
+                            <label>
+                                <input type="radio" name="myRadio4" value="Option 16">
+                            </label> 2
+                            <label>
+                                <input type="radio" name="myRadio4" value="Option 17">
+                            </label> 3
+                            <label>
+                                <input type="radio" name="myRadio4" value="Option 18">
+                            </label> 4
+                            <label>
+                                <input type="radio" name="myRadio4" value="Option 19">
+                            </label> 5
                         </p><br><br><br>
 
                         <p class="image6"><img src="6.jpeg"></p><br><br>
@@ -256,8 +306,7 @@
                         </div>
 
                         <br>
-                        <a class="btn btn-primary align-right" href="payment.html" role="button">Next
-                            Step</a>
+                        <input type="submit" class="btn btn-primary align-right" value="Next Step" href="payment.html" role="button">
                     </form>
                 </div>
             </div>
@@ -277,3 +326,23 @@
 </body>
 
 </html>
+<script>
+// Get a reference to the item with id "item1"
+const item1 = document.getElementById("item1");
+
+// Add a click event listener to toggle the "selected" class
+item1.addEventListener("click", function () {
+item1.classList.toggle("selected");
+})
+
+
+// Get all elements with an id starting with "item"
+var elements = document.querySelectorAll('[id^="item2"]');
+
+// Loop through each element and modify its style
+elements.forEach(function (element) {
+element.style.color = 'blue'; // Change text color to blue
+element.style.textDecoration = 'underline'; // Add underline
+
+});
+</script>
