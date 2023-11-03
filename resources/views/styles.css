@@ -1,34 +1,24 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0.1599999964237213px;
-    text-align: left;
 
-} */
 *body{
     padding: 0;
     margin: 0;
 }
 .pdesign1{
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, sans-serif;
     font-size: 32px;
     font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0.1599999964237213px;
+    line-height: 18;
+    letter-spacing: 0;
     text-align: left;
-    
+
 
 }
 .pdesign3{
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 32px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 0.1599999964237213px;
+    letter-spacing: 0;
     text-align: left;
     justify-content: center;
     padding: 10px;
@@ -44,7 +34,7 @@
 
 
 .pdesign2{
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 26px;
     font-weight: 500;
     line-height: 36px;
@@ -54,24 +44,21 @@
 }
 .side-bar {
     width: 296px;
-    /* height: 4894px; */
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.1599999964237213px;
     text-align: left;
-    width: Hug (221px);
-    height: Hug (424px);
     top: 167px;
     left: 38px;
-    padding: 5px;
+    padding: 2px;
     gap: 8px;
 
 
 }
 .side-bar1
-{  
+{
     margin-left:17px ;
 }
 
@@ -81,13 +68,11 @@
 }
 
 
-/* CSS in a separate style sheet or <style> tag */
-
 .align-left {
     float: left;
     margin-right: 200px;
     background: #0000FF;
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -96,66 +81,61 @@
 
 
 }
-    
+
 .align-right{
-    float:right;
-    margin-right: 200px;
-    background: #0000FF;
-    font-family: IBM Plex Sans;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0.1599999964237213px;
-    text-align: left;
+            float: right;
+            background: #0000FF;
+            margin-right: 200px;
+            font-family: 'IBM Plex Sans', serif; /* Make sure to use single or double quotes for font family names with spaces */
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px; /* You may want to adjust this based on your design */
+            letter-spacing: 0; /* You can adjust the letter-spacing as needed */
+            text-align: right; /* Set text-align to right to align text to the right within the button */
+            /* Remove margin-left: 400px; */
+    }
 
 
 
-}
+
+
 
 
 .img1 {
     margin-top: 31px;
     padding-right: 10px;
-    
+
 
 }
 
 .item1{
-    width: Hug (185px);
-    height: Fixed (58px);
+    width: 185px;
+    height: 58px;
     gap: 8px;
 
 }
 .item2{
-    width: Hug (151px);
-    height: Fixed (18px);
-    border: 0px, 0px, 1px, 0px;
+    width: 151px;
+    height: 18px;
+    /*border: 0px,0px,1px;*/
     background: #0F62FE;
     border-bottom: 1px solid #0F62FE;
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.1599999964237213px;
     text-align: left;
-    background: #0F62FE;
-
-
-
 }
 
 .item{
-    width: Hug (185px);
-    height: Fixed (58px);
+    width: 185px;
+    height: 58px;
     gap: 8px;
 
 }
 .pdesign{
-    /* width: 938px;
-    height: 108px;
-    top: 209px;
-    left: 393px; */
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
@@ -165,28 +145,23 @@
 
 
 }
- .design { 
-    border: 1px ; 
+ .design {
+    border: 1px ;
     color: #E6F1F4;
     width: 936px;
     height: 285px;
     top: 556px;
     left: 393px;
-    border: 1px;
-    box-shadow: 0px 4px 10px 0px #ACACAC59;}
+     box-shadow: 0 4px 10px 0 #ACACAC59;}
 
 
 
 td {
-    /* padding: 8px;
-    text-align: center; /* Align text horizontally in the middle */
-    /* vertical-align: middle; /* Align text vertically in the middle */
-    /* font-weight: bold; Make the text bold */
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     width: 142px;
     height: 18px;
@@ -194,17 +169,17 @@ td {
     left: 456px;
     color: #000000;
 
-    
+
 
 }
 th {
-    
-    font-family: IBM Plex Sans;
+
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 0em;
-    text-align: center; 
+    letter-spacing: 0;
+    text-align: center;
     color: #000000;
     width: 59px;
     height: 18px;
@@ -216,7 +191,7 @@ th {
 
 
 /* tr:nth-child(even) {
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
 }
 tr:nth-child(odd) {
     background-color: rgb(200, 209, 219);
@@ -231,9 +206,9 @@ tr:nth-child(odd) {
     top: 1114px;
     left: 394px;
     border: 1px;
-    border: 1px solid #E6F1F4;
+    border: solid #E6F1F4;
 
-    
+
 
 }
 .design11{
@@ -248,7 +223,7 @@ tr:nth-child(odd) {
     background:  #CAF0F8;
 
     border: 1px solid #E6F1F4;
-    
+
 }
 .design21{
     background:#FFFFFF;
@@ -259,11 +234,11 @@ tr:nth-child(odd) {
 
 }
 .design20{
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 40px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     background:#FFFFFF;
 
@@ -279,7 +254,7 @@ tr:nth-child(odd) {
 }
 .design3{
     background:#90E0EF;
-    
+
     border: 1px solid #E6F1F4;
 }
 .design111{
@@ -288,7 +263,7 @@ tr:nth-child(odd) {
     top: 3076px;
     left: 393px;
     border: 1px;
-    border: 1px solid #E4ECEE;
+    border: solid #E4ECEE;
 
 }
 .design221{
@@ -319,21 +294,21 @@ tr:nth-child(odd) {
     top: 3738px;
     left: 393px;
     border: 1px;
-    border: 1px solid #EBEBEB;
+    border: solid #EBEBEB;
 
 }
 .design2211{
     background:  #CAF0F8;
     border: 1px solid #EBEBEB;
-    
+
 }
 .design2221{
     background:  #ADE8F4;
     border: 1px solid #EBEBEB;
-    
+
 }
 .format{
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
@@ -343,12 +318,12 @@ tr:nth-child(odd) {
 }
 .list-container {
     display: inline-block;
-    width: Fixed (225px);
-    height: Hug (156px);
+    width: 225px;
+    height: 156px;
     top: 1556px;
     left: 393px;
     gap: 8px;
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
@@ -358,25 +333,25 @@ tr:nth-child(odd) {
 
   }
 
- 
+
   .popup {
-    
+
     display: none;
-       
+
   }
   .popup1{
       margin-top: -290px;
       position: relative;
       display: inline-block;
       margin-left: 200px
-    
+
   }
  .popup2{
     margin-top: -280px;
     position: relative;
     display: inline-block;
     margin-left: 210px
-  
+
 }
 .popup3{
     margin-top: -280px;
@@ -384,31 +359,31 @@ tr:nth-child(odd) {
     display: inline-block;
     margin-left: 210px
 }
-  
+
 
 .popup4{
     margin-top: -180px;
     position: relative;
     display: inline-block;
-    margin-left: 400px; 
+    margin-left: 400px;
 }
 .popup5{
     margin-top: -360px;
     position: relative;
     display: inline-block;
-    margin-left: 650px; 
+    margin-left: 650px;
 }
 .popup6{
     margin-top: -210px;
     position: relative;
     display: inline-block;
-    margin-left: 200px; 
+    margin-left: 200px;
 }
 .popup7{
     margin-top: -210px;
     position: relative;
     display: inline-block;
-    margin-left: 200px; 
+    margin-left: 200px;
 }
 
 .alert{
@@ -423,13 +398,12 @@ tr:nth-child(odd) {
     top: 4502px;
     left: 394px;
     border-radius: 20px;
-    background: #0000FFB0; 
+    background: #0000FFB0;
     color: #FFFFFF;
     display: inline-block;
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 700;
-    line-height: 36px;
     letter-spacing: 0.1599999964237213px;
     text-align: center;
     text-decoration: none;
@@ -438,7 +412,7 @@ tr:nth-child(odd) {
     line-height: 2;
     transition: background-color 0.3s, color 0.3s;
 
-    
+
 }
 .custom-button:hover {
     background-color: #2577A0;
@@ -451,7 +425,7 @@ tr:nth-child(odd) {
 
 .submit-message{
     display: inline-block;
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
@@ -464,7 +438,7 @@ tr:nth-child(odd) {
 .message
 {
     display: inline-block;
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
@@ -477,13 +451,13 @@ tr:nth-child(odd) {
 .message1
 {
     display: inline-block;
-    font-family: IBM Plex Sans;
+    font-family: IBM Plex Sans, serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.01em;
 }
-  
+
 .question1 {
     display: none;
 }
@@ -501,7 +475,7 @@ tr:nth-child(odd) {
 .image1
 {
     display:inline-block;
-    vertical-align: top; 
+    vertical-align: top;
 }
 .list1
 {
@@ -521,7 +495,7 @@ tr:nth-child(odd) {
 .image2
 {
     display:inline-block;
-    vertical-align: top; 
+    vertical-align: top;
 }
 .list2
 {
@@ -541,12 +515,12 @@ tr:nth-child(odd) {
 .image3
 {
     display:inline-block;
-    vertical-align: top; 
+    vertical-align: top;
 }
 .list3
 {
     display: inline-block;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -561,12 +535,12 @@ tr:nth-child(odd) {
 .image4
 {
     display:inline-block;
-    vertical-align: top; 
+    vertical-align: top;
 }
 .list4
 {
     display: inline-block;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -581,16 +555,16 @@ tr:nth-child(odd) {
 .image5
 {
     display:inline-block;
-    vertical-align: top; 
+    vertical-align: top;
 }
 .list5
 {
     display: inline-block;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     margin-left: 10px;
     margin-top: 19px; /* You can adjust the value to move it up or down as needed */

@@ -8,6 +8,371 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Main Task</title>
+    <style>
+        *body{
+            padding: 0;
+            margin: 0;
+        }
+        .pdesign1{
+            font-family: IBM Plex Sans, sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 18;
+            letter-spacing: 0;
+            text-align: left;
+
+
+        }
+        .pdesign3{
+            font-family: IBM Plex Sans, serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0;
+            text-align: left;
+            justify-content: center;
+            padding: 10px;
+            background: #E6F1F4;
+            width: 938px;
+            height: 47px;
+            top: 342px;
+            left: 383px;
+
+
+
+        }
+
+
+        .pdesign2{
+            font-family: IBM Plex Sans, serif;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+
+        }
+        .side-bar {
+            width: 296px;
+            font-family: IBM Plex Sans, serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+            top: 167px;
+            left: 38px;
+            padding: 2px;
+            gap: 8px;
+
+
+        }
+        .side-bar1
+        {
+            margin-left:17px ;
+        }
+
+        .selected {
+            color: blue;
+
+        }
+
+
+        .align-left {
+            float: left;
+            margin-right: 200px;
+            background: #0000FF;
+            font-family: IBM Plex Sans, serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+
+
+        }
+        .img1 {
+            margin-top: 31px;
+            padding-right: 10px;
+
+
+        }
+
+
+        .pdesign{
+            font-family: IBM Plex Sans, serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.01em;
+            text-align: left;
+
+
+
+        }
+        .design {
+            border: 1px ;
+            color: #E6F1F4;
+            width: 936px;
+            height: 285px;
+            top: 556px;
+            left: 393px;
+            box-shadow: 0 4px 10px 0 #ACACAC59;}
+
+
+
+        td {
+            font-family: IBM Plex Sans, serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0;
+            text-align: center;
+            width: 142px;
+            height: 18px;
+            top: 636px;
+            left: 456px;
+            color: #000000;
+
+
+
+        }
+        th {
+
+            font-family: IBM Plex Sans, serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0;
+            text-align: center;
+            color: #000000;
+            width: 59px;
+            height: 18px;
+            top: 575px;
+            left: 499px;
+
+
+        }
+
+
+        .header-row {
+            text-align: center;
+
+        }
+        .design1{
+            width: 615px;
+            height: 311px;
+            top: 1114px;
+            left: 394px;
+            border: 1px;
+            border: solid #E6F1F4;
+
+
+
+        }
+        .design11{
+            width: 936px;
+            height: 270px;
+            top: 2047px;
+            left: 393px;
+            border: 1px;
+
+        }
+        .design2{
+            background:  #CAF0F8;
+
+            border: 1px solid #E6F1F4;
+
+        }
+        .design21{
+            background:#FFFFFF;
+
+            border: 1px solid #E6F1F4;
+
+
+
+        }
+        .design20{
+            font-family: IBM Plex Sans, serif;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0;
+            text-align: center;
+            background:#FFFFFF;
+
+            border: 1px solid #E6F1F4;
+        }
+        .design22{
+            background:  #E6F1F4;
+
+            border: 1px solid #E6F1F4;
+
+
+
+        }
+        .design3{
+            background:#90E0EF;
+
+            border: 1px solid #E6F1F4;
+        }
+        .design111{
+            width: 936px;
+            height: 400px;
+            top: 3076px;
+            left: 393px;
+            border: 1px;
+            border: solid #E4ECEE;
+
+        }
+        .design221{
+            background:  #90E0EF;
+            border: 1px solid #E4ECEE;
+
+
+        }
+        .design222{
+            background: #ADE8F4;
+            border: 1px solid #E4ECEE;
+        }
+        .design223{
+            background: #CAF0F8;
+
+            border: 1px solid #E4ECEE;
+        }
+        .design224
+        {
+            background: #DBF3F5;
+            border: 1px solid #E4ECEE;
+
+        }
+        .design1111
+        {
+            width: 936px;
+            height: 209px;
+            top: 3738px;
+            left: 393px;
+            border: 1px;
+            border: solid #EBEBEB;
+
+        }
+        .design2211{
+            background:  #CAF0F8;
+            border: 1px solid #EBEBEB;
+
+        }
+        .design2221{
+            background:  #ADE8F4;
+            border: 1px solid #EBEBEB;
+
+        }
+        .format{
+            font-family: IBM Plex Sans, serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.3199999928474426px;
+            text-align: left;
+
+        }
+        .list-container {
+            display: inline-block;
+            width: 225px;
+            height: 156px;
+            top: 1556px;
+            left: 393px;
+            gap: 8px;
+            font-family: IBM Plex Sans, serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.01em;
+            text-align: left;
+
+
+        }
+
+
+        .popup {
+
+            display: none;
+
+        }
+
+
+
+
+
+        .popup5{
+            margin-top: -360px;
+            position: relative;
+            display: inline-block;
+            margin-left: 650px;
+        }
+        .popup6{
+            margin-top: -210px;
+            position: relative;
+            display: inline-block;
+            margin-left: 200px;
+        }
+        .popup7{
+            margin-top: -210px;
+            position: relative;
+            display: inline-block;
+            margin-left: 200px;
+        }
+
+        .alert{
+            margin-right:-20px;
+            margin-top: -30px;
+            display: inline-block
+        }
+        /* styles.css */
+        .custom-button {
+            width: 336px;
+            height: 55px;
+            top: 4502px;
+            left: 394px;
+            border-radius: 20px;
+            background: #0000FFB0;
+            color: #FFFFFF;
+            display: inline-block;
+            font-family: IBM Plex Sans, serif;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.1599999964237213px;
+            text-align: center;
+            text-decoration: none;
+            justify-content: center;
+            cursor: pointer;
+            line-height: 2;
+            transition: background-color 0.3s, color 0.3s;
+
+
+        }
+        .custom-button:hover {
+            background-color: #2577A0;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+
+        .question1 {
+            display: none;
+        }
+        .question2 {
+            display: none;
+        }
+        .question3 {
+            display: none;
+        }
+        .question4 {
+            display: none;
+
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -307,7 +672,7 @@
 
             </div>
         </div>
-
+    </div>
         <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -322,3 +687,431 @@
 </body>
 
 </html>
+<script>
+    const item1 = document.getElementById("item1");
+
+    // Add a click event listener to toggle the "selected" class
+    item1.addEventListener("click", function () {
+        item1.classList.toggle("selected");
+    })
+
+
+    // Get all elements with an id starting with "item"
+    var elements = document.querySelectorAll('[id^="item2"]');
+
+    // Loop through each element and modify its style
+    elements.forEach(function (element) {
+        element.style.color = 'blue'; // Change text color to blue
+        element.style.textDecoration = 'underline'; // Add underline
+
+    });
+    // script.js
+    document.addEventListener("DOMContentLoaded", function () {
+        const hiddenDiv = document.getElementById("hiddenDiv");
+
+        // Delay the appearance of the hidden div (e.g., 3 seconds)
+        setTimeout(() => {
+            hiddenDiv.style.display = "block";
+        }, 3000); // 3000 milliseconds (3 seconds)
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const hiddenDiv = document.getElementById("hiddenDiv1");
+
+        // Delay the appearance of the hidden div (e.g., 3 seconds)
+        setTimeout(() => {
+            hiddenDiv.style.display = "block";
+        }, 4000); // 3000 milliseconds (3 seconds)
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const hiddenDiv = document.getElementById("hiddenDiv2");
+
+        // Delay the appearance of the hidden div (e.g., 3 seconds)
+        setTimeout(() => {
+            hiddenDiv.style.display = "block";
+        }, 5000); // 3000 milliseconds (3 seconds)
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const showNextButton = document.getElementById("showNext");
+        const question1 = document.querySelector(".question1");
+        const errorText = document.getElementById("error");
+
+        showNextButton.addEventListener("click", () => {
+            const selectedOption = document.querySelector('input[name="myRadio"]:checked');
+            if (selectedOption) {
+                // If an option is selected, perform the further functionality
+                question1.style.display = "block";
+                errorText.style.display = "none"; // Hide the error message if shown
+            } else {
+                // Display the error message if no option is selected
+                errorText.style.display = "block";
+            }
+        });
+    })
+    document.addEventListener("DOMContentLoaded", function () {
+        const showNextButton1 = document.getElementById("showNext1");
+        const question2 = document.querySelector(".question2");
+        const error1Text = document.getElementById("error1");
+
+        showNextButton1.addEventListener("click", () => {
+            const selectedOption1 = document.querySelector('input[name="myRadio1"]:checked');
+            if (selectedOption1) {
+                // If an option is selected, perform the further functionality
+                question2.style.display = "block";
+                error1Text.style.display = "none"; // Hide the error message if shown
+            } else {
+                // Display the error message if no option is selected
+                error1Text.style.display = "block";
+            }
+        });
+    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const submitButton = document.querySelector('.custom-button.submit');
+        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        const feedback = document.getElementById('feedback');
+
+        function handleOptionSelection() {
+            const selectedOption1 = document.querySelector('input[name="myRadio1"]:checked');
+
+            if (selectedOption1 && selectedOption1.value === "Option 1") {
+                feedback.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Next Training Task';
+                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
+                // You can choose to proceed or take any other action here.
+            } else {
+                feedback.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
+                // You can reset the radio buttons to unselected here if needed.
+                setTimeout(function () {
+                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
+                }, 2000); // Adjust the delay (in milliseconds) as needed.
+            }
+        }
+
+        submitButton.addEventListener('click', handleOptionSelection);
+
+        nextStepButton.addEventListener('click', function (e) {
+            if (nextStepButton.classList.contains('disabled')) {
+                e.preventDefault();
+            }
+        });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const showNextButton = document.getElementById("showNext2");
+        const question3 = document.querySelector(".question3");
+
+        showNextButton.addEventListener("click", () => {
+            question3.style.display = "block";
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const showNextButton2 = document.getElementById("showNext3");
+        const question4 = document.querySelector(".question4");
+        const error2Text = document.getElementById("error2");
+
+        showNextButton2.addEventListener("click", () => {
+            const selectedOption2 = document.querySelector('input[name="myRadio2"]:checked');
+            if (selectedOption2) {
+                // If an option is selected, perform the further functionality
+                question4.style.display = "block";
+                error2Text.style.display = "none"; // Hide the error message if shown
+            } else {
+                // Display the error message if no option is selected
+                error2Text.style.display = "block";
+            }
+        });
+    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const submitButton1 = document.querySelector('.custom-button.submit1');
+        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
+        const radioButtons1 = document.querySelectorAll('input[type="radio"]');
+        const feedback1 = document.getElementById('feedback1');
+
+        // Disable the last "Next Step" button initially
+        nextStepButton.classList.add('disabled');
+
+        submitButton1.addEventListener('click', function () {
+            const selectedOption2 = document.querySelector('input[name="myRadio2"]:checked');
+
+            if (selectedOption2 && selectedOption2.value === "Option 5") {
+                feedback1.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Next Training Task';
+                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
+                // You can choose to proceed or take any other action here.
+            } else {
+                feedback1.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
+                // You can reset the radio buttons to unselected here if needed.
+                setTimeout(function () {
+                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
+                }, 2000); // Adjust the delay (in milliseconds) as needed.
+            }
+        });
+        nextStepButton.addEventListener('click', function (e) {
+            if (nextStepButton.classList.contains('disabled')) {
+                e.preventDefault();
+            }
+        });
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const startOverButton = document.getElementById('startOverButton');
+
+        startOverButton.addEventListener('click', function () {
+            // Scroll to the top of the page
+            window.scrollTo(0, 0);
+
+            // Reload the page
+            location.reload();
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const showNextButton1 = document.getElementById("showNext1");
+        const question2 = document.querySelector(".question2");
+        const error1Text = document.getElementById("error1");
+
+        showNextButton1.addEventListener("click", () => {
+            const selectedOption1 = document.querySelector('input[name="myRadio3"]:checked');
+            if (selectedOption1) {
+                // If an option is selected, perform the further functionality
+                question2.style.display = "block";
+                error1Text.style.display = "none"; // Hide the error message if shown
+            } else {
+                // Display the error message if no option is selected
+                error1Text.style.display = "block";
+            }
+        });
+    })
+    document.addEventListener("DOMContentLoaded", function () {
+        const showNextButton1 = document.getElementById("showNext3");
+        const question2 = document.querySelector(".question4");
+        const error2Text = document.getElementById("error2");
+
+        showNextButton1.addEventListener("click", () => {
+            const selectedOption3 = document.querySelector('input[name="myRadio4"]:checked');
+            if (selectedOption3) {
+                // If an option is selected, perform the further functionality
+                question2.style.display = "block";
+                error2Text.style.display = "none"; // Hide the error message if shown
+            } else {
+                // Display the error message if no option is selected
+                error2Text.style.display = "block";
+            }
+        });
+    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const submitButton2 = document.querySelector('.custom-button.submit2');
+        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
+        const radioButtons2 = document.querySelectorAll('input[type="radio"]');
+        const feedback2 = document.getElementById('feedback2');
+
+        // Disable the last "Next Step" button initially
+        nextStepButton.classList.add('disabled');
+
+        submitButton2.addEventListener('click', function () {
+            const selectedOption3 = document.querySelector('input[name="myRadio3"]:checked');
+
+            if (selectedOption3 && selectedOption3.value === "Option 11") {
+                feedback2.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Main Training Task';
+                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
+                // You can choose to proceed or take any other action here.
+            } else {
+                feedback2.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
+                // You can reset the radio buttons to unselected here if needed.
+                setTimeout(function () {
+                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
+                }, 2000); // Adjust the delay (in milliseconds) as needed.
+            }
+        });
+        nextStepButton.addEventListener('click', function (e) {
+            if (nextStepButton.classList.contains('disabled')) {
+                e.preventDefault();
+            }
+        });
+
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const submitButton3 = document.querySelector('.custom-button.submit3');
+        const nextStepButton = document.getElementById('nextStepButton'); // Use the unique identifier
+        const radioButtons3 = document.querySelectorAll('input[type="radio"]');
+        const feedback2 = document.getElementById('feedback3');
+
+        // Disable the last "Next Step" button initially
+        nextStepButton.classList.add('disabled');
+
+        submitButton3.addEventListener('click', function () {
+            const selectedOption4 = document.querySelector('input[name="myRadio4"]:checked');
+
+            if (selectedOption4 && selectedOption4.value === "Option 16") {
+                feedback2.textContent = 'Your answer is correct! Please select the bottom-right "Next Step" button for the Main Task';
+                nextStepButton.classList.remove('disabled'); // Enable the last "Next Step" button
+                // You can choose to proceed or take any other action here.
+            } else {
+                feedback2.textContent = 'Your answer is not correct. You are redirecting to another Training Task';
+                // You can reset the radio buttons to unselected here if needed.
+                setTimeout(function () {
+                    window.location.href = 'AdditionalTrainingTask1.html'; // Redirect to the page for incorrect answers.
+                }, 2000); // Adjust the delay (in milliseconds) as needed.
+            }
+        });
+        nextStepButton.addEventListener('click', function (e) {
+            if (nextStepButton.classList.contains('disabled')) {
+                e.preventDefault();
+            }
+        });
+
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit4");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "mainTask2.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit5");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message1");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "mainTask2.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit6");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message2");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "mainTask3.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit7");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message3");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "mainTask3.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit8");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message4");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "" +
+                    "" +
+                    "mainTask4.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit9");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message5");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "mainTask4.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit10");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message6");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "survey.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the "I want to submit" button by its class name
+        const submitButton = document.querySelector(".submit11");
+
+        // Get the submit message element
+        const submitMessage = document.querySelector(".submit-message7");
+
+        // Add a click event listener to the button
+        submitButton.addEventListener("click", function () {
+            // Display the message
+            submitMessage.style.display = "block";
+
+            // Redirect to the desired page after a short delay
+            setTimeout(function () {
+                window.location.href = "survey.blade.php";
+            }, 2000); // Adjust the delay time (in milliseconds) as needed
+        });
+    });
+
+</script>
