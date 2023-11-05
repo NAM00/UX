@@ -8,6 +8,163 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Task Description</title>
+    <style>
+        *body{
+            padding: 0;
+            margin: 0;
+        }
+        .pdesign1{
+            font-family: IBM Plex Sans;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+
+
+        }
+        .pdesign3{
+            font-family: IBM Plex Sans;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+            justify-content: center;
+            padding: 10px;
+            background: #E6F1F4;
+            width: 938px;
+            height: 47px;
+            top: 342px;
+            left: 383px;
+
+
+
+        }
+
+
+
+        .side-bar {
+            width: 296px;
+            /* height: 4894px; */
+            font-family: IBM Plex Sans, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+            width: Hug (221px);
+            height: Hug (424px);
+            top: 167px;
+            left: 38px;
+            padding: 5px;
+            gap: 8px;
+
+
+        }
+        .side-bar1
+        {
+            margin-left:17px ;
+        }
+
+        .selected {
+            color: blue;
+
+        }
+
+
+        .align-right{
+            float:right;
+            margin-right: 200px;
+            background: #0000FF;
+            font-family: IBM Plex Sans;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+
+
+
+        }
+
+
+        .img1 {
+            margin-top: 31px;
+            padding-right: 10px;
+
+
+        }
+
+
+
+
+        .pdesign{
+            /* width: 938px;
+            height: 108px;
+            top: 209px;
+            left: 393px; */
+            font-family: IBM Plex Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.01em;
+            text-align: left;
+
+
+
+        }
+        .design {
+            border: 1px ;
+            color: #E6F1F4;
+            width: 936px;
+            height: 285px;
+            top: 556px;
+            left: 393px;
+            border: 1px;
+            box-shadow: 0px 4px 10px 0px #ACACAC59;}
+
+
+
+        td {
+            /* padding: 8px;
+            text-align: center; /* Align text horizontally in the middle */
+            /* vertical-align: middle; /* Align text vertically in the middle */
+            /* font-weight: bold; Make the text bold */
+            font-family: IBM Plex Sans;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;
+            width: 142px;
+            height: 18px;
+            top: 636px;
+            left: 456px;
+            color: #000000;
+
+
+
+        }
+        th {
+
+            font-family: IBM Plex Sans;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #000000;
+            width: 59px;
+            height: 18px;
+            top: 575px;
+            left: 499px;
+
+
+        }
+
+    </style>
+
 </head>
 
 <body>
