@@ -23,25 +23,6 @@
 
 
         }
-        .pdesign3{
-            font-family: IBM Plex Sans;
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 0.1599999964237213px;
-            text-align: left;
-            justify-content: center;
-            padding: 10px;
-            background: #E6F1F4;
-            width: 938px;
-            height: 47px;
-            top: 342px;
-            left: 383px;
-
-
-
-        }
-
 
 
         .side-bar {
@@ -64,7 +45,7 @@
         }
         .side-bar1
         {
-            margin-left:17px ;
+            margin-left:40px ;
         }
 
         .selected {
@@ -114,54 +95,9 @@
 
 
         }
-        .design {
-            border: 1px ;
-            color: #E6F1F4;
-            width: 936px;
-            height: 285px;
-            top: 556px;
-            left: 393px;
-            border: 1px;
-            box-shadow: 0px 4px 10px 0px #ACACAC59;}
 
 
 
-        td {
-            /* padding: 8px;
-            text-align: center; /* Align text horizontally in the middle */
-            /* vertical-align: middle; /* Align text vertically in the middle */
-            /* font-weight: bold; Make the text bold */
-            font-family: IBM Plex Sans;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: center;
-            width: 142px;
-            height: 18px;
-            top: 636px;
-            left: 456px;
-            color: #000000;
-
-
-
-        }
-        th {
-
-            font-family: IBM Plex Sans;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: center;
-            color: #000000;
-            width: 59px;
-            height: 18px;
-            top: 575px;
-            left: 499px;
-
-
-        }
 
     </style>
 
@@ -189,38 +125,29 @@
                 <h1 class='pdesign1'><b>Task Description</b></h1><br><br>
 
                 <div class='pdesign'>
-                    <p>You will receive three sets of information. Your <b>Goal</b> is to correctly <b>classify</b> the
-                        given <br>data by
-                        comparing values from the questions to a <b>reference chart</b>. There are 4 <br> possible
-                        Categories/Classes - Temperature, Humidity, Pressure or Rain, from which<br> you have to
-                        identify
-                        the right one. You will answer four questions using three steps <br>for 4 tasks.<br><br>
+                    <p>You have to select <b>One</b> answer from <b>Four</b> options -<b> Temperature, Humidity,<br> Pressure & Rain.</b>
+                        <br><br>
+                        You will get a <b style="color:#716EF9">Given range</b> and <b style="color:#BFD004">Reference range</b> of values related with these four<br>options.
+                        You task is to compare these<b style="color:#716EF9"> given values</b> with the <b style="color:#BFD004">reference values</b> and <br>find out the right option.
+                        <br><br>
                         <b>Step 1:</b><br><br>
-                        We will show you one minimum and maximum values’ range, and you will compare <br>these values
-                        with
-                        the reference chart. Then you have to select a category.<br><br>
+                        You will see - 1.  <b style="color:#BFD004">Reference</b> Maximum & Minimum values Range for all four options<br>
+                    <p style="margin-left: 142px;">2. A <b style="color:#716EF9">Given</b> maximum & Minimum Range of the right option</p>
+                        You have to check in which <b style="color:#BFD004">Reference</b> Range does the <b style="color:#716EF9">Given</b> Range match.
+                        .<br><br>
                         <b>Step 2:</b><br><br>
-                        In the step 2, we will show you a sensor name and a channel name. For answering<br> your
-                        question,
-                        you should check if there is any relation among the names of the <br>categories and
-                        sensor/channel
-                        names.<br><br>
-                        <b> Sensor names get more priority than channel names.</b><br><br>
-                        <b>Step 3:</b>
-                        If you consider that you need more information for a decision of the category, we<br> present
-                        you
-                        the reference median value for all categories, as well as the median <br>value of the respective
-                        category. You can compare the given value with the <br>reference chart.
-                    </p><br><br>
-                    <p style="color:red">Always Look at the green tips boxes before selecting an option. you will
-                        get<br>
-                        important
-                        instructions on how to select the correct answer!</p>
-
-
-
-
-
+                        You will get a <b style="color:#2323FFB8">Sensor Name</b> and a <b style="color:#D48C00">Channel Name</b> of the right option.<br>
+                        You have to check if the <b style="color:#2323FFB8">Sensor Name</b> or the <b style="color:#D48C00">Channel Name</b> have any literal/<br>
+                        verbatim similarity with any of the four options.<br><br>
+                        <b style="font-size: 32px;color:red"> Sensor names get more priority than channel names.</b><br><br>
+                        <b>Step 3:</b><br><br>
+                        You will get - 1.  <b style="color:#BFD004">Reference</b> value range for each of the options<br>
+                        <p style="margin-left: 142px;">2. A <b style="color:#716EF9">Given</b> value of the right option</p>
+                        Again, you will check in which range the <b style="color:#716EF9">Given</b> value lies from the <b style="color:#BFD004">Reference</b> value <br>range.<br><br>
+                        <b style="color:red;font-size: 32px">Always Look at the green tips boxes before selecting<br> an option. You will
+                        get important instructions there!!!</b>
+                        <p style="margin-left: 142px;"><img src="read_me.jpeg"></p>
+                    You have to complete <b>4 tasks</b> to get the payment.
 
                 </div>
             </div>
