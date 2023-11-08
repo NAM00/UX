@@ -484,7 +484,7 @@
             </div>
             <br>
             <br>
-            <form id="form1">
+            <form id="form1" method="GET" action="{{ route('task2') }}">
             <div>
                 <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>
                 <div class="list-container">

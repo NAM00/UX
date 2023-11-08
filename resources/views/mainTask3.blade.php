@@ -460,7 +460,7 @@
                 </div>
                 <br>
                 <br>
-                <form id="form3">
+                <form id="form3" method="GET" action="{{ route('task4') }}">
                 <div>
                     <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>
 
