@@ -19,8 +19,17 @@
             font-weight: 500;
             line-height: 18px;
             letter-spacing: 0.1599999964237213px;
+            display: inline-block;
             text-align: left;
 
+        }
+        .progress{
+            display: inline-block;
+            position: relative;
+            margin-left: 100px;
+            width: 400px;
+            height: 100px;
+            margin-top:-30px;
 
         }
         .pdesign3{
@@ -33,7 +42,7 @@
             justify-content: center;
             padding: 10px;
             background: #E6F1F4;
-            width: 938px;
+            width: 870px;
             height: 47px;
             top: 342px;
             left: 383px;
@@ -72,7 +81,7 @@
         }
         .side-bar1
         {
-            margin-left:17px ;
+            margin-left:40px  ;
         }
 
         .selected {
@@ -107,11 +116,9 @@
         }
 
 
+
         .pdesign{
-            /* width: 938px;
-            height: 108px;
-            top: 209px;
-            left: 393px; */
+
             font-family: IBM Plex Sans;
             font-size: 24px;
             font-weight: 400;
@@ -122,84 +129,50 @@
 
 
         }
-        .design {
-            border: 1px ;
-            color: #E6F1F4;
-            width: 936px;
-            height: 285px;
-            top: 556px;
-            left: 393px;
-            border: 1px;
-            box-shadow: 0px 4px 10px 0px #ACACAC59;}
-
-
 
         td {
-            /* padding: 8px;
-            text-align: center; /* Align text horizontally in the middle */
-            /* vertical-align: middle; /* Align text vertically in the middle */
-            /* font-weight: bold; Make the text bold */
             font-family: IBM Plex Sans;
-            font-size: 24px;
+            font-size: 32px;
             font-weight: 500;
-            line-height: 18px;
+            line-height: 34px;
             letter-spacing: 0em;
             text-align: center;
-            width: 142px;
-            height: 18px;
-            top: 636px;
-            left: 456px;
+            width: 234px;
+            height: 197px;
+            top: 2118px;
+            left: 386px;
+            border: 1px;
             color: #000000;
-
-
-
         }
         th {
-
             font-family: IBM Plex Sans;
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 18px;
             letter-spacing: 0em;
             text-align: center;
-            color: #000000;
-            width: 59px;
-            height: 18px;
-            top: 575px;
-            left: 499px;
+
+
 
 
         }
-
         .header-row {
             text-align: center;
 
-        }
-        .design1{
-            width: 615px;
-            height: 311px;
-            top: 1114px;
-            left: 394px;
-            border: 1px;
-            border: 1px solid #E6F1F4;
-
 
 
         }
+
         .design11{
-            width: 936px;
+            width: 234px;
             height: 270px;
-            top: 2047px;
-            left: 393px;
+            top: 2045px;
+            left: 386px;
             border: 1px;
 
-        }
-        .design2{
-            background:  #CAF0F8;
-
-            border: 1px solid #E6F1F4;
 
         }
+
         .design21{
             background:#FFFFFF;
 
@@ -208,80 +181,12 @@
 
 
         }
-        .design20{
-            font-family: IBM Plex Sans;
-            font-size: 40px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: center;
-            background:#FFFFFF;
 
-            border: 1px solid #E6F1F4;
-        }
-        .design22{
-            background:  #E6F1F4;
-
-            border: 1px solid #E6F1F4;
-
-
-
-        }
-        .design3{
+        .design1{
             background:#90E0EF;
-
             border: 1px solid #E6F1F4;
         }
-        .design111{
-            width: 936px;
-            height: 400px;
-            top: 3076px;
-            left: 393px;
-            border: 1px;
-            border: 1px solid #E4ECEE;
 
-        }
-        .design221{
-            background:  #90E0EF;
-            border: 1px solid #E4ECEE;
-
-
-        }
-        .design222{
-            background: #ADE8F4;
-            border: 1px solid #E4ECEE;
-        }
-        .design223{
-            background: #CAF0F8;
-
-            border: 1px solid #E4ECEE;
-        }
-        .design224
-        {
-            background: #DBF3F5;
-            border: 1px solid #E4ECEE;
-
-        }
-        .design1111
-        {
-            width: 936px;
-            height: 209px;
-            top: 3738px;
-            left: 393px;
-            border: 1px;
-            border: 1px solid #EBEBEB;
-
-        }
-        .design2211{
-            background:  #CAF0F8;
-            border: 1px solid #EBEBEB;
-
-        }
-        .design2221{
-            background:  #ADE8F4;
-            border: 1px solid #EBEBEB;
-
-        }
         .format{
             font-family: IBM Plex Sans;
             font-size: 16px;
@@ -309,29 +214,47 @@
         }
 
 
-        .popup {
+        /*.popup {*/
 
-            display: none;
+        /*    display: none;*/
 
-        }
+        /*}*/
 
-        .popup5{
-            margin-top: -360px;
+        .popup1{
+            margin-top: -200px;
             position: relative;
             display: inline-block;
-            margin-left: 650px;
+            margin-left: 200px;
+        }
+        .popup2{
+            margin-top: -300px;
+            position: relative;
+            display: inline-block;
+            margin-left: 250px;
+        }
+        .popup3{
+            margin-top: -200px;
+            position: relative;
+            display: inline-block;
+            margin-left: 200px;
+        }
+        .popup4{
+            margin-top: -150px;
+            position: relative;
+            display: inline-block;
+            margin-left: 400px;
+        }
+        .popup5{
+            margin-top: -200px;
+            position: relative;
+            display: inline-block;
+            margin-left: 200px;
         }
         .popup6{
-            margin-top: -210px;
+            margin-top: -150px;
             position: relative;
             display: inline-block;
-            margin-left: 200px;
-        }
-        .popup7{
-            margin-top: -210px;
-            position: relative;
-            display: inline-block;
-            margin-left: 200px;
+            margin-left: 400px;
         }
 
         .alert{
@@ -346,6 +269,7 @@
             top: 4502px;
             left: 394px;
             border-radius: 20px;
+            border: none;
             background: #0000FFB0;
             color: #FFFFFF;
             display: inline-block;
@@ -368,11 +292,34 @@
             color: #FFFFFF;
             text-decoration: none;
         }
+        .custom-button1{
+            width: 336px;
+            height: 55px;
+            top: 4502px;
+            left: 394px;
+            border-radius: 20px;
+            background:  #66B600;
+            color: #FFFFFF;
+            display: inline-block;
+            font-family: IBM Plex Sans;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: center;
+            text-decoration: none;
+            justify-content: center;
+            cursor: pointer;
+            line-height: 2;
+            transition: background-color 0.3s, color 0.3s;
 
 
-
-
-
+        }
+        .custom-button1:hover {
+            background-color: #99CC33;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
         .question1 {
             display: none;
         }
@@ -386,14 +333,6 @@
             display: none;
 
         }
-
-
-
-
-
-
-
-
 
     </style>
 
@@ -419,71 +358,34 @@
             <div class="side-bar1">
                 <br><br>
 
-                <h1 class='pdesign1'><b>Main Task</b></h1><br><br>
-
+                <h1 class='pdesign1'><b>Main Task</b></h1>
+                <img class="progress" src="progress4.jpeg">
                 <div class="pdesign">
-                    <p><b>Please have a look into the task below with which you can determine the right class of <br>the
-                            weather data from the given Minimum & Maximum values, Sensor and Full<br> Channel names and
-                            Median values - </b>
+                    <p><b style="color: red;font-size: 32px">Congratulations on completing your third task!</b><br><br>
+                        Now you are in your <b style="color: red"> 4th task</b>.
+                        Just repeat the task with different <b style="color: red">Given values</b>, the<br> <b style="color: #65912C">Reference values</b>
+                        are same.
                     </p>
+                    <b style="color:red">Always Look at the green tips boxes before selecting an option. You will get <br> important instructions there!! </b>
+                    <br>
                     <br>
 
                 </div><br>
                 <h1 class='pdesign3'><b>Task4</b></h1><br>
-                <p class='pdesign'>Now look into the chart given below. In the chart there are four classes and
-                    their<br> respective minimum and maximum values - </p>
-                <table class="design">
-                    <tr class="header-row">
-                        <th class="design2">Class</th>
-                        <th class="design2">Minimum</th>
-                        <th class="design2">Maximum</th>
-                    </tr>
-                    <tr>
-                        <td class="design21">Temparature</td>
-                        <td class="design21">-18.4</td>
-                        <td class="design21">109.87</td>
-                    </tr>
-                    <tr>
-                        <td class="design22">Humidity</td>
-                        <td class="design22">-12.6</td>
-                        <td class="design22">395.83</td>
-                    </tr>
-                    <tr>
-                        <td class="design21">Pressure</td>
-                        <td class="design21">99.01</td>
-                        <td class="design21">1197.08</td>
-                    </tr>
-                    <tr>
-                        <td class="design22">Rain</td>
-                        <td class="design22">-299.28</td>
-                        <td class="design22">1330.09</td>
-                    </tr>
-                </table>
+                <p class='pdesign'>Now look into the chart given below. In the chart there are <b>four Options</b> and
+                    their<br> respective value ranges - </p>
+                <p id="chart6a" ><img src="Max 6.jpg" style="width: 860px"></p>
+
 
                 <br>
                 <div class='pdesign'>
-                    <p> The given Minimum and Maximum values are -
+                    <p> Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the<br> <b style="color:#FF50ED"> Vertical Purple</b>.
+                        Select that option below -<br><br>
+
+                        If the given value overlaps with more than one options, just select any random one <br>option and go to the next step to verify more.
+
                     </p>
                 </div><br>
-                <div>
-                    <div class='list-container'>
-                        <table class="design1">
-                            <tr class="header-row">
-                                <th class=design2>Minimum</th>
-                                <th class=design3>Maximum</th>
-                            </tr>
-                            <tr>
-                                <td class="design20"> -299.28</td>
-                                <td class="design20">0.42</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="popup" id="hiddenDiv">
-                        <img src="reference.jpeg" class="popup5">
-                    </div>
-                </div>
-                <br>
-                <br>
                 <form id="form4">
                 <div>
 
@@ -505,6 +407,9 @@
                             <input type="radio" name="myRadio9" value="Option 40">
                         </label> Rain<br>
                     </div>
+                    <div class="popup" >
+                        <img src="pop1.jpeg" class="popup1">
+                    </div>
                     <br><br>
 
                     <div class="div"><a class="btn btn-primary align-left" href="javascript:void(0)" id="showNext"
@@ -523,35 +428,30 @@
                 <br> <br>
                 <div class='question1'>
                     <br>
-                    <p class='pdesign'>Now, you will be shown a Sensor name and a Channel name associated with the
-                        <br>previous minimum and maximum value.
-                        <br><br>
-                        Determine whether there is any relationship between the class name and the sensor/<br>channel
-                        name
-                        and then select the class associated with the given name.
+                    <p class='pdesign'>Now, you will be shown a Sensor name of the earlier given range.<br><br>
+
+                        You have to check if there is any literal/verbatim similarity or link up between the<br>
+                        options and Sensor name.
+
+
                     </p><br>
 
                     <table class="design11">
                         <tr class="header-row">
-                            <th class=design2>Minimum</th>
-                            <th class=design3>Sensor Name</th>
-                            <th class=design2>Channel Name</th>
-                            <th class=design3>Maximum</th>
-
+                            <th class=design1>Sensor Name</th>
                         </tr>
                         <tr>
-                            <td class="design20"> -299.28</td>
-                            <td class="design21">Rain mm</td>
-                            <td class="design21">Wiedemann Weather Station<br><br>
-                                RoEl</td>
-                            <td class="design20">0.42</td>
+                            <td id="sensor3" class="design21">Rain mm</td>
                         </tr>
                     </table>
+                    <div class="popup" >
+                        <img src="pop2.jpeg" class="popup2">
+                    </div>
 
 
 
                     <br>
-                    <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>
+                    <p class='pdesign2'><b>Which class is the right one?</b></p><br>
 
 
                     <div class="list-container">
@@ -569,8 +469,8 @@
                             <input type="radio" name="myRadio10" value="Option 44">
                         </label> Rain<br>
                     </div>
-                    <div class="popup" id="hiddenDiv1">
-                        <img src="if.jpeg" class="popup6">
+                    <div class="popup" >
+                        <img src="pop3.jpeg" class="popup3">
                     </div>
                     <br>
                     <div class="div1"><a class="btn btn-primary align-left" href="javascript:void(0)" id="showNext1"
@@ -586,84 +486,37 @@
                 <br><br>
                 <div class='question2'>
                     <br>
-                    <p class="pdesign">Are you sure about your selection and want to submit the task or you want to
-                        verify<br> further with median values?
+                    <p class="pdesign">Are you sure about your selection and want to submit the task, or you want to verify<br>
+                        further with one more step?
                     </p>
                     <div>
                         <input type="submit" class="custom-button sub6" name="submit_answer7" value="I want to submit" href="javascript:void(0)" >
                         <p class="submit-message6" style="color: green; display: none;"><b>Submitted</b>
                         </p>
                         <br><br>
-                        <a class="custom-button" href="javascript:void(0)" id="showNext2" role="button">
+                        <a class="custom-button1" href="javascript:void(0)" id="showNext2" role="button">
                             I want to verify more
                         </a>
-
+                        <div class="popup" >
+                            <img src="pop4.jpeg" class="popup4">
+                        </div>
                     </div>
                 </div>
                 <div class='question3'>
                     <br>
-                    <p class='pdesign'>Now look into the reference chart given below. In the chart there are four
-                        classes and<br> their respective Median Value Probabilities - </p>
+                    <p class='pdesign'>Now look into the 2nd chart below. In the chart you will see another set of vertical <br>
+                        ranges for those four options and a <b style="color:#117B00 ">green vertical</b> line which is given Median value.<br>
+                        Again, you have to check on which option’s horizontal bars are overlapped by the<br> green line -  </p>
                     <br>
-                    <table class="design111">
-                        <tr class="header-row">
-                            <th class="design221">Class</th>
-                            <th class="design222">Highest Probability</th>
-                            <th class="design223">Medium Probability </th>
-                            <th class="design224">Lowest Probability</th>
-                        </tr>
-                        <tr>
-                            <td class="design21">Temperature</td>
-                            <td class="design21">9.4 - 25.3</td>
-                            <td class="design21">27.3 - 55.15</td>
-                            <td class="design21">3.4 - 9.3</td>
-                        </tr>
-                        <tr>
-                            <td class="design22">Humidity</td>
-                            <td class="design22">28.1 - 78.4</td>
-                            <td class="design22">98.3 - 100</td>
-                            <td class="design22">18.5 - 30.2</td>
-                        </tr>
-                        <tr>
-                            <td class="design21">Pressure</td>
-                            <td class="design21">990 - 1031</td>
-                            <td class="design21">927 - 985</td>
-                            <td class="design21">720 - 745</td>
-                        </tr>
-                        <tr>
-                            <td class="design22">Rain</td>
-                            <td class="design22">23.3 - 159.2</td>
-                            <td class="design22">1010 - 1035</td>
-                            <td class="design22">1243 - 1270</td>
-                        </tr>
-                    </table>
+                    <p id="chart6b" ><img src="Median 6.jpg" style="width: 860px"></p>
                     <br>
                     <div class='pdesign'>
-                        <p>Here, you will be given the Median Value of the previous class. You have to compare the<br>
-                            value with the
-                            reference Median chart and guess the best possible answer.<br><br>
-
-                            The Median value of the data point -</p>
+                        <p>Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the <br>
+                            vertical <b style="color: #00B312FA">Green line</b>.
+                            Select that option below - <br><br>
                     </div>
-                    <br>
-                    <table class="design1111">
-                        <tr class="header-row">
-                            <th class="design2211">Minimum</th>
-                            <th class="design2221">Sensor Name</th>
-                            <th class="design2211">Median</th>
-                            <th class="design2221">Channel Name</th>
-                            <th class="design2211">Maximum</th>
-                        </tr>
-                        <tr>
-                            <td class="design20">-299.28</td>
-                            <td class="design21">Rain mm</td>
-                            <td class="design20">1006.345</td>
-                            <td class="design21">Wiedemann Weather Station</td>
-                            <td class="design20">0.42</td>
-                        </tr>
-                    </table>
-                    <br>
-                    <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>
+
+                    <p class='pdesign2'><b>Which option is overlapped by the vertical <b style="color: #00B312FA">Green line</b>?</b></p><br>
 
 
                     <div class="list-container">
@@ -681,8 +534,8 @@
                             <input type="radio" name="myRadio11" value="Option 48">
                         </label> Rain<br>
                     </div>
-                    <div class="popup" id="hiddenDiv2">
-                        <img src="compare.jpeg" class="popup7">
+                    <div class="popup" >
+                        <img src="pop5.jpeg" class="popup5">
                     </div>
                     <br>
                     <div class="div2"><a class="btn btn-primary align-left" href="javascript:void(0)" id="showNext3"
@@ -704,11 +557,14 @@
                         <p class="submit-message7" style="color: green; display: none;"><b>Submitted</b>
                         </p>
                         <br><br>
-                        <a class="custom-button" href="javascript:void(0)" role="button" id="startOverButton">
+                        <a class="custom-button1" href="javascript:void(0)" role="button" id="startOverButton">
                             Start from the beginning
                         </a>
 
 
+                    </div>
+                    <div class="popup" >
+                        <img src="pop6.jpeg" class="popup6">
                     </div>
                 </div>
 
@@ -751,31 +607,31 @@
         element.style.textDecoration = 'underline'; // Add underline
 
     });
-    // script.js
-    document.addEventListener("DOMContentLoaded", function () {
-        const hiddenDiv = document.getElementById("hiddenDiv");
-
-        // Delay the appearance of the hidden div (e.g., 3 seconds)
-        setTimeout(() => {
-            hiddenDiv.style.display = "block";
-        }, 3000); // 3000 milliseconds (3 seconds)
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        const hiddenDiv = document.getElementById("hiddenDiv1");
-
-        // Delay the appearance of the hidden div (e.g., 3 seconds)
-        setTimeout(() => {
-            hiddenDiv.style.display = "block";
-        }, 4000); // 3000 milliseconds (3 seconds)
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        const hiddenDiv = document.getElementById("hiddenDiv2");
-
-        // Delay the appearance of the hidden div (e.g., 3 seconds)
-        setTimeout(() => {
-            hiddenDiv.style.display = "block";
-        }, 5000); // 3000 milliseconds (3 seconds)
-    });
+    // // script.js
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const hiddenDiv = document.getElementById("hiddenDiv");
+    //
+    //     // Delay the appearance of the hidden div (e.g., 3 seconds)
+    //     setTimeout(() => {
+    //         hiddenDiv.style.display = "block";
+    //     }, 3000); // 3000 milliseconds (3 seconds)
+    // });
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const hiddenDiv = document.getElementById("hiddenDiv1");
+    //
+    //     // Delay the appearance of the hidden div (e.g., 3 seconds)
+    //     setTimeout(() => {
+    //         hiddenDiv.style.display = "block";
+    //     }, 4000); // 3000 milliseconds (3 seconds)
+    // });
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const hiddenDiv = document.getElementById("hiddenDiv2");
+    //
+    //     // Delay the appearance of the hidden div (e.g., 3 seconds)
+    //     setTimeout(() => {
+    //         hiddenDiv.style.display = "block";
+    //     }, 5000); // 3000 milliseconds (3 seconds)
+    // });
     document.addEventListener("DOMContentLoaded", function () {
         const showNextButton = document.getElementById("showNext");
         const question1 = document.querySelector(".question1");

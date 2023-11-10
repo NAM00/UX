@@ -56,7 +56,7 @@
 
         .align-right{
             float:right;
-            margin-right: 200px;
+            margin-right: 250px;
             background: #0000FF;
             font-family: IBM Plex Sans;
             font-size: 18px;
@@ -145,8 +145,9 @@
                         <p style="margin-left: 142px;">2. A <b style="color:#716EF9">Given</b> value of the right option</p>
                         Again, you will check in which range the <b style="color:#716EF9">Given</b> value lies from the <b style="color:#BFD004">Reference</b> value <br>range.<br><br>
                         <b style="color:red;font-size: 32px">Always Look at the green tips boxes before selecting<br> an option. You will
-                        get important instructions there!!!</b>
-                        <p style="margin-left: 142px;"><img src="read_me.jpeg"></p>
+                        get important instructions there!!!</b><br>
+                        <p style="margin-left: 250px;"><img src="arrow.jpeg"></p>
+                        <p style="margin-left: 142px;"><img src="read_me.jpeg"></p><br>
                     You have to complete <b>4 tasks</b> to get the payment.
 
                 </div>
