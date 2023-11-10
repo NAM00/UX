@@ -37,4 +37,12 @@ Route::get('/task4', function () {
     return view('mainTask4');
 })->name('task4');
 
+Route::get('/survey', function () {
+    return view('survey');
+})->name('survey');
+
+Route::get('/payment', function () {
+    return view('payment');
+})->name('payment');
+
 Route::get('/task', [\App\Http\Controllers\TaskController::class, 'task'])->name('task');

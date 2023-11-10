@@ -205,7 +205,7 @@
                 <div>
                     <p><img src="ThankYou.jpeg">
                     </p><br><br>
-                    <form id="surveyForm">
+                    <form id="surveyForm" method="GET" action="{{ route('payment') }}">
                         <p class="image1"><img src="1.jpeg"></p>
                         <p class="list1">
                             <label>
