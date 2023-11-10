@@ -297,15 +297,6 @@
                                 <input type="radio" name="myRadio4" value="Option 19">
                             </label> 5
                         </p><br><br><br>
-
-                        <p class="image6"><img src="6.jpeg"></p><br><br>
-                        <div class="answer-input">
-                            <label for="userAnswer6"><b>Your Answer:</b></label>
-                            <textarea id="userAnswer6" name="userAnswer6" rows="2" cols="70"></textarea>
-
-                        </div>
-
-                        <br>
                         <input type="submit" class="btn btn-primary align-right" value="Next Step" href="payment.html" role="button">
                     </form>
                 </div>
