@@ -738,5 +738,9 @@
             }, 2000); // Adjust the delay time (in milliseconds) as needed
         });
     });
+    history.pushState(null, null, document.URL);
+    window.addEventListener('popstate', function () {
+        history.pushState(null, null, document.URL);
+    });
 
 </script>

@@ -15,34 +15,37 @@
             margin: 0;
         }
         .pdesign1{
-            font-family: IBM Plex Sans, sans-serif;
+            font-family: IBM Plex Sans;
             font-size: 32px;
             font-weight: 500;
-            line-height: 18;
-            letter-spacing: 0;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            display: inline-block;
             text-align: left;
-
 
         }
 
         .side-bar {
             width: 296px;
-            font-family: IBM Plex Sans, serif;
+            /* height: 4894px; */
+            font-family: IBM Plex Sans, sans-serif;
             font-size: 20px;
             font-weight: 400;
             line-height: 18px;
             letter-spacing: 0.1599999964237213px;
             text-align: left;
+            width: Hug (221px);
+            height: Hug (424px);
             top: 167px;
             left: 38px;
-            padding: 2px;
+            padding: 5px;
             gap: 8px;
 
 
         }
         .side-bar1
         {
-            margin-left:17px ;
+            margin-left:40px ;
         }
 
         .selected {
@@ -107,19 +110,16 @@
             <div class="side-bar1">
                 <br><br>
 
-                <h1 class='pdesign1'><b>Payment Code</b></h1><br><br>
+                <h1 class='pdesign1'><b>Payment</b></h1><br><br><br>
 
                 <div>
-                    <p><img src="7.jpeg">
-                    </p><br><br>
-
-                </div>
+                    <img src="7.jpeg" style="margin-left: -4px">
+                    <br><br>
                 <div class="content">
-                    <p id="generated-content">Content generated from the backend</p>
-                    <button style="font-size:24px">Copy <i class="fa fa-copy"></i></button>
+                    <div id="generated-code">Content generated from the backend</div>
                 </div>
 
-                <br>
+                <br><br>
                 <a class="btn btn-primary align-right" href=" " role="button">Complete Task</a>
 
 
@@ -158,5 +158,9 @@
         element.style.color = 'blue'; // Change text color to blue
         element.style.textDecoration = 'underline'; // Add underline
 
+    });
+    history.pushState(null, null, document.URL);
+    window.addEventListener('popstate', function () {
+        history.pushState(null, null, document.URL);
     });
 </script>
