@@ -384,23 +384,24 @@
 
                 </p>
             </div><br>
-            <form id="form1" method="GET" action="{{ route('task2') }}">
+            <form id="form1" method="POST" action="{{ route('SubmitMainTask1') }}">
+                @csrf
             <div>
                 <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>
                 <div class="list-container">
                     <p class='format'>Select one</p>
 
                     <label>
-                        <input type="radio" name="myRadio" value="Option 1">
+                        <input type="radio" name="myRadio" id="myRadio"  value="Temperature">
                     </label> Temperature<br>
                     <label>
-                        <input type="radio" name="myRadio" value="Option 2">
+                        <input type="radio" name="myRadio" id="myRadio" value="Option 2">
                     </label> Humidity<br>
                     <label>
-                        <input type="radio" name="myRadio" value="Option 3">
+                        <input type="radio" name="myRadio" id="myRadio" value="Option 3">
                     </label> Pressure<br>
                     <label>
-                        <input type="radio" name="myRadio" value="Option 4">
+                        <input type="radio" name="myRadio" id="myRadio" value="Option 4">
                     </label> Rain<br>
                 </div>
                 <div class="popup" >

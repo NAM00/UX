@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Task;
+use App\Models\Rating;
 use Illuminate\Http\Request;
 
-class TaskController extends Controller
+class RatingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,24 +27,24 @@ class TaskController extends Controller
         //
     }
 
-
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
-        $session_id = session()->getId();
-        $temp = $request->post("myRadio");
-        $data = new Task();
-        $data->sub_task_11 = $temp;
-        $data->save();
-        return view('maintask2', ['name' => 'James']);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Task  $task
+     * @param  \App\Models\Rating  $rating
      * @return \Illuminate\Http\Response
      */
-    public function show(Task $task)
+    public function show(Rating $rating)
     {
         //
     }
@@ -52,10 +52,10 @@ class TaskController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Task  $task
+     * @param  \App\Models\Rating  $rating
      * @return \Illuminate\Http\Response
      */
-    public function edit(Task $task)
+    public function edit(Rating $rating)
     {
         //
     }
@@ -64,10 +64,10 @@ class TaskController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Task  $task
+     * @param  \App\Models\Rating  $rating
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Task $task)
+    public function update(Request $request, Rating $rating)
     {
         //
     }
@@ -75,10 +75,10 @@ class TaskController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Task  $task
+     * @param  \App\Models\Rating  $rating
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Task $task)
+    public function destroy(Rating $rating)
     {
         //
     }

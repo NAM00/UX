@@ -25,6 +25,11 @@ Route::get('/task1', function () {
     return view('mainTask1');
 })->name('task1');
 
+
+
+Route::post('task1_submit', [\App\Http\Controllers\TaskController::class, 'store'])->name('SubmitMainTask1');
+
+
 Route::get('/task2', function () {
     return view('mainTask2');
 })->name('task2');
