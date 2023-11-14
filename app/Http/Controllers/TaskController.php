@@ -34,6 +34,7 @@ class TaskController extends Controller
         $temp = $request->post("myRadio");
         $data = new Task();
         $data->sub_task_11 = $temp;
+        $data->session_id = $session_id;
         $data->save();
         return view('maintask2', ['name' => 'James']);
     }
