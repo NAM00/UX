@@ -392,16 +392,16 @@
                     <p class='format'>Select one</p>
 
                     <label>
-                        <input type="radio" name="myRadio" id="myRadio"  value="Temperature">
+                        <input type="radio" name="subTask11" id="subTask11"  value="Temperature">
                     </label> Temperature<br>
                     <label>
-                        <input type="radio" name="myRadio" id="myRadio" value="Option 2">
+                        <input type="radio" name="subTask11" id="subTask11" value="Humidity">
                     </label> Humidity<br>
                     <label>
-                        <input type="radio" name="myRadio" id="myRadio" value="Option 3">
+                        <input type="radio" name="subTask11" id="subTask11" value="Pressure">
                     </label> Pressure<br>
                     <label>
-                        <input type="radio" name="myRadio" id="myRadio" value="Option 4">
+                        <input type="radio" name="subTask11" id="subTask11" value="Rain">
                     </label> Rain<br>
                 </div>
                 <div class="popup" >
@@ -453,16 +453,16 @@
                 <div class="list-container">
                     <p class="format">Select one</p>
                     <label>
-                        <input type="radio" name="myRadio1" value="Option 5">
+                        <input type="radio" name="subTask12" id="subTask12"  value="Temperature">
                     </label> Temperature<br>
                     <label>
-                        <input type="radio" name="myRadio1" value="Option 6">
+                        <input type="radio" name="subTask12" id="subTask12"  value="Humidity">
                     </label> Humidity<br>
                     <label>
-                        <input type="radio" name="myRadio1" value="Option 7">
+                        <input type="radio" name="subTask12" id="subTask12"  value="Pressure">
                     </label> Pressure<br>
                     <label>
-                        <input type="radio" name="myRadio1" value="Option 8">
+                        <input type="radio" name="subTask12" id="subTask12"  value="Rain">
                     </label> Rain<br>
                 </div>
                 <div class="popup" >
@@ -521,16 +521,16 @@
                 <div class="list-container">
                     <p class="format">Select one</p>
                     <label>
-                        <input type="radio" name="myRadio2" value="Option 9">
+                        <input type="radio" name="subTask13" id="subTask13"  value="Temperature">
                     </label> Temperature<br>
                     <label>
-                        <input type="radio" name="myRadio2" value="Option 10">
+                        <input type="radio" name="subTask13" id="subTask13"  value="Humidity">
                     </label> Humidity<br>
                     <label>
-                        <input type="radio" name="myRadio2" value="Option 11">
+                        <input type="radio" name="subTask13" id="subTask13"  value="Pressure">
                     </label> Pressure<br>
                     <label>
-                        <input type="radio" name="myRadio2" value="Option 12">
+                        <input type="radio" name="subTask13" id="subTask13"  value="Rain">
                     </label> Rain<br>
                 </div>
                 <div class="popup" >
@@ -633,11 +633,12 @@
         const errorText = document.getElementById("error");
 
         showNextButton.addEventListener("click", () => {
-            const selectedOption = document.querySelector('input[name="myRadio"]:checked');
+            const selectedOption = document.querySelector('input[name="subTask11"]:checked');
             if (selectedOption) {
                 // If an option is selected, perform the further functionality
                 question1.style.display = "block";
                 errorText.style.display = "none"; // Hide the error message if shown
+                question1.scrollIntoView({ behavior: "smooth" });
             } else {
                 // Display the error message if no option is selected
                 errorText.style.display = "block";
@@ -650,11 +651,12 @@
         const error1Text = document.getElementById("error1");
 
         showNextButton1.addEventListener("click", () => {
-            const selectedOption1 = document.querySelector('input[name="myRadio1"]:checked');
+            const selectedOption1 = document.querySelector('input[name="subTask12"]:checked');
             if (selectedOption1) {
                 // If an option is selected, perform the further functionality
                 question2.style.display = "block";
                 error1Text.style.display = "none"; // Hide the error message if shown
+                question2.scrollIntoView({ behavior: "smooth" });
             } else {
                 // Display the error message if no option is selected
                 error1Text.style.display = "block";
@@ -670,6 +672,7 @@
 
         showNextButton.addEventListener("click", () => {
             question3.style.display = "block";
+            question3.scrollIntoView({ behavior: "smooth" });
         });
     });
 
@@ -679,11 +682,12 @@
         const error2Text = document.getElementById("error2");
 
         showNextButton2.addEventListener("click", () => {
-            const selectedOption2 = document.querySelector('input[name="myRadio2"]:checked');
+            const selectedOption2 = document.querySelector('input[name="subTask13"]:checked');
             if (selectedOption2) {
                 // If an option is selected, perform the further functionality
                 question4.style.display = "block";
                 error2Text.style.display = "none"; // Hide the error message if shown
+                question4.scrollIntoView({ behavior: "smooth" });
             } else {
                 // Display the error message if no option is selected
                 error2Text.style.display = "block";

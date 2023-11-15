@@ -152,7 +152,6 @@
 
     // Get all elements with an id starting with "item"
     var elements = document.querySelectorAll('[id^="item2"]');
-
     // Loop through each element and modify its style
     elements.forEach(function (element) {
         element.style.color = 'blue'; // Change text color to blue

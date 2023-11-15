@@ -243,6 +243,7 @@
                     <img src="ThankYou.jpeg" style="margin-left: -4px">
                     <br><br>
                     <form id="surveyForm" method="GET" action="{{ route('payment') }}">
+                        @csrf
                         <br>
                         <p class="image1"><img src="1.jpeg"></p>
                         <div class="star-rating" style="margin-left: 80px" data-rating="0">
@@ -252,6 +253,7 @@
                             <span class="star" data-value="4"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="5"><i class="fas fa-star"></i></span>
                         </div>
+                        <input type="hidden" id="starRatingInput1" name="starRating1" value="0">
                         <br><br><br><br>
                         <p class="image2"><img src="2.jpeg"></p>
                         <div class="star-rating" style="margin-left: 18px" data-rating="0">
@@ -260,7 +262,9 @@
                             <span class="star" data-value="3"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="4"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="5"><i class="fas fa-star"></i></span>
-                        </div><br><br><br>
+                        </div>
+                        <input type="hidden" id="starRatingInput2" name="starRating2" value="0">
+                        <br><br><br>
                         <p class="image3"><img src="3.jpeg"></p>
                         <div class="star-rating" style="margin-left: 90px"data-rating="0">
                             <span class="star" data-value="1"><i class="fas fa-star"></i></span>
@@ -268,7 +272,9 @@
                             <span class="star" data-value="3"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="4"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="5"><i class="fas fa-star"></i></span>
-                        </div><br><br><br>
+                        </div>
+                        <input type="hidden" id="starRatingInput3" name="starRating3" value="0">
+                        <br><br><br>
                         <p class="image4"><img src="4.jpeg"></p>
                         <div class="star-rating" style="margin-left: 90px" data-rating="0">
                             <span class="star" data-value="1"><i class="fas fa-star"></i></span>
@@ -276,7 +282,9 @@
                             <span class="star" data-value="3"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="4"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="5"><i class="fas fa-star"></i></span>
-                        </div><br><br><br>
+                        </div>
+                        <input type="hidden" id="starRatingInput4" name="starRating4" value="0">
+                        <br><br><br>
                         <p class="image5"><img src="5.jpeg"></p>
                         <div class="star-rating" style="margin-left: 50px" data-rating="0">
                             <span class="star" data-value="1"><i class="fas fa-star"></i></span>
@@ -284,7 +292,9 @@
                             <span class="star" data-value="3"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="4"><i class="fas fa-star"></i></span>
                             <span class="star" data-value="5"><i class="fas fa-star"></i></span>
-                        </div><br><br>
+                        </div>
+                        <input type="hidden" id="starRatingInput5" name="starRating5" value="0">
+                        <br><br>
                         <input type="submit" id="nextButton" class="btn btn-primary align-right" onclick="goToNextPage()" value="Next Step" href="payment.html" role="button">
                     </form>
                 </div>
@@ -327,13 +337,15 @@ elements.forEach(function (element) {
 document.addEventListener("DOMContentLoaded", function () {
     const starContainers = document.querySelectorAll(".star-rating");
 
-    starContainers.forEach((container) => {
+    starContainers.forEach((container, index) => {
         const stars = container.querySelectorAll(".star");
+        const ratingInput = document.getElementById(`starRatingInput${index + 1}`);
 
         stars.forEach((star) => {
             star.addEventListener("click", function () {
                 const value = this.getAttribute("data-value");
                 container.setAttribute("data-rating", value);
+                ratingInput.value = value;
 
                 stars.forEach((s) => {
                     s.classList.remove("active");
