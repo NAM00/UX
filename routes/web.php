@@ -27,20 +27,27 @@ Route::get('/task1', function () {
 
 
 
-Route::post('task1_submit', [\App\Http\Controllers\TaskController::class, 'store'])->name('SubmitMainTask1');
+Route::post('task1_submit', [\App\Http\Controllers\TaskController::class, 'store_mainTask1'])->name('SubmitMainTask1');
 
 
 Route::get('/task2', function () {
     return view('mainTask2');
 })->name('task2');
 
+Route::post('task2_submit', [\App\Http\Controllers\TaskController::class, 'store_mainTask2'])->name('SubmitMainTask2');
+
 Route::get('/task3', function () {
     return view('mainTask3');
 })->name('task3');
 
+Route::post('task3_submit', [\App\Http\Controllers\TaskController::class, 'store_mainTask3'])->name('SubmitMainTask3');
+
+
 Route::get('/task4', function () {
     return view('mainTask4');
 })->name('task4');
+
+Route::post('task4_submit', [\App\Http\Controllers\TaskController::class, 'store_mainTask4'])->name('SubmitMainTask4');
 
 Route::get('/survey', function () {
     return view('survey');

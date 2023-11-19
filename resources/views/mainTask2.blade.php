@@ -384,7 +384,7 @@
 
                     </p>
                 </div><br>
-                <form id="form2" method="GET" action="{{ route('task3') }}">
+                <form id="form2" method="POST" action="{{ route('SubmitMainTask2') }}">
                     @csrf
                 <div>
                     <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>

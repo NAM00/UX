@@ -386,7 +386,7 @@
 
                     </p>
                 </div><br>
-                <form id="form4" method="GET" action="{{ route('survey') }}">
+                <form id="form4" method="POST" action="{{ route('SubmitMainTask4') }}">
                     @csrf
                 <div>
 

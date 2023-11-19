@@ -27,7 +27,7 @@ class CreateTasksTable extends Migration
             $table->string("sub_task_41")->default(0);
             $table->string("sub_task_42")->default(0);
             $table->string("sub_task_43")->nullable();
-            $table->string("session_id")->nullable();
+            $table->string("session_id")->unique();
             $table->timestamps();
         });
     }
