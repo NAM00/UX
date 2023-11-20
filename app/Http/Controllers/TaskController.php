@@ -60,8 +60,8 @@ class TaskController extends Controller
             $data->sub_task_13 = $subTask13;
             $data->session_id = $session_id;
             $data->save();        }
+        return route(task2);
 
-        return view('maintask2', ['name' => 'James']);
     }
 
     public function store_mainTask2(Request $request)
