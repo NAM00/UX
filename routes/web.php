@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Task_Desc');
-})->name('home');
+});
 
 Route::get('/home', function () {
     return view('Task_Desc');
-})->name('home');
+});
 
 Route::get('/task1', function () {
     return view('mainTask1');
@@ -30,7 +30,7 @@ Route::get('/task1', function () {
 Route::post('task1_submit', [\App\Http\Controllers\TaskController::class, 'store_mainTask1'])->name('SubmitMainTask1');
 
 
-Route::get('/task2', function () {
+Route::get('/mainTask2.blade.php', function () {
     return view('mainTask2');
 })->name('task2');
 

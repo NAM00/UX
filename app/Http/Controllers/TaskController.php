@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AssignClass;
 use App\Models\Task;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 use DB;
 
 class TaskController extends Controller
@@ -61,8 +61,8 @@ class TaskController extends Controller
             $data->session_id = $session_id;
             $data->save();
         }
-        return redirect()->route('task2');
 
+        return view('mainTask2');
     }
 
     public function store_mainTask2(Request $request)
