@@ -116,7 +116,7 @@
                     <img src="7.jpeg" style="margin-left: -4px">
                     <br><br>
                 <div class="content">
-                    <div id="generated-code">Content generated from the backend</div>
+                    <div id="generated-code">{{ $testWorkerId}}</div>
                 </div>
 
                 <br><br>

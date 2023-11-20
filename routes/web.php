@@ -53,6 +53,9 @@ Route::get('/survey', function () {
     return view('survey');
 })->name('survey');
 
+Route::post('rating_submit', [\App\Http\Controllers\RatingController::class, 'store_review'])->name('RatingSubmit');
+
+
 Route::get('/payment', function () {
     return view('payment');
 })->name('payment');
