@@ -61,7 +61,7 @@ class TaskController extends Controller
             $data->session_id = $session_id;
             $data->save();        }
 
-        return view('maintask2');
+        return view('mainTask2');
     }
 
     public function store_mainTask2(Request $request)
@@ -83,7 +83,7 @@ class TaskController extends Controller
         $data->sub_task_22 = $subTask22;
         $data->sub_task_23 = $subTask23;
         $data->update();
-        return view('maintask3', ['name' => 'James']);
+        return view('mainTask3');
     }
 
     public function store_mainTask3(Request $request)
@@ -105,7 +105,7 @@ class TaskController extends Controller
         $data->sub_task_32 = $subTask32;
         $data->sub_task_33 = $subTask33;
         $data->update();
-        return view('maintask4', ['name' => 'James']);
+        return view('mainTask4');
     }
 
     public function store_mainTask4(Request $request)
