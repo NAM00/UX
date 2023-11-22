@@ -34,6 +34,17 @@ Route::get('/mainTask2.blade.php', function () {
     return view('mainTask2');
 })->name('task2');
 
+Route::get('/mainTask3.blade.php', function () {
+    return view('mainTask3');
+})->name('task3');
+
+Route::get('/mainTask4.blade.php', function () {
+    return view('mainTask4');
+})->name('task4');
+
+Route::get('/survey.blade.php', function () {
+    return view('survey');
+})->name('survey');
 Route::post('task2_submit', [\App\Http\Controllers\TaskController::class, 'store_mainTask2'])->name('SubmitMainTask2');
 
 Route::get('/task3', function () {
