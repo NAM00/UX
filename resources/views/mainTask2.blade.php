@@ -372,7 +372,7 @@
                 <h1 class='pdesign3'><b>Task2</b></h1><br>
                 <p class='pdesign'>Now look into the chart given below. In the chart there are <b>four Options</b> and
                     their<br> respective value ranges - </p>
-                <p id="chart17a" ><img src="Max 17.jpg" style="width: 860px"></p>
+                <p id="chart17a" ><img id="max2" src="" style="width: 860px"></p>
 
 
                 <br>
@@ -439,7 +439,7 @@
                             <th class=design1>Sensor Name</th>
                         </tr>
                         <tr>
-                            <td id="sensor2" class="design21">Pressure</td>
+                            <td id="sensor2" class="design21"></td>
                         </tr>
                     </table>
                     <div class="popup" >
@@ -506,7 +506,7 @@
                         ranges for those four options and a <b style="color:#117B00 ">green vertical</b> line which is given Median value.<br>
                         Again, you have to check on which option’s horizontal bars are overlapped by the<br> green line -  </p>
                     <br>
-                    <p id="chart17b" ><img src="Median 17.jpg" style="width: 860px"></p>
+                    <p id="chart17b" ><img id="median2" src="" style="width: 860px"></p>
                     <br>
                     <div class='pdesign'>
                         <p>Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the <br>
@@ -743,6 +743,34 @@
             }, 2000); // Adjust the delay time (in milliseconds) as needed
         });
     });
+    function setValuesForUser(userIndex) {
+        // Define arrays of possible values for each element
+        const max2Images = ["Max 6.jpg", "Max 7.jpg", "Max 8.jpg, Max 9.jpg, Max 10.jpg"]; // Replace with actual image URLs
+        const sensor2Names = ["Rain mm", "Rain", "Rain detector temp", "Precipitation ml / m²","Intensity of precipitation"]; // Replace with actual names
+        const median2Images = ["Median 6.jpg", "Median 7.jpg", "Median 8.jpg", "Median 9.jpg","Median 12.jpg"]; // Replace with actual image URLs
+
+        // Get the index for the current user based on the modulo of 6
+        const index = userIndex % 6;
+
+        // Calculate the index for each array based on the modulo of its length
+        const max2Index = index % max2Images.length;
+        const sensor2Index = index % sensor2Names.length;
+        const median2Index = index % median2Images.length;
+
+        // Set values for the elements based on the calculated indices
+        document.getElementById("max2").src = max2Images[max2Index];
+        document.getElementById("sensor2").innerText = sensor2Names[sensor2Index];
+        document.getElementById("median2").src = median2Images[median2Index];
+    }
+
+    // Call the function to set values for the current user when the page loads
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the user index from wherever it is available (e.g., user ID, session, etc.)
+        const userIndex = 0; // Replace this with the actual user index
+
+        setValuesForUser(userIndex);
+    });
+
     history.pushState(null, null, document.URL);
     window.addEventListener('popstate', function () {
         history.pushState(null, null, document.URL);
