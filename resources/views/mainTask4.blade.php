@@ -374,7 +374,8 @@
                 <h1 class='pdesign3'><b>Task4</b></h1><br>
                 <p class='pdesign'>Now look into the chart given below. In the chart there are <b>four Options</b> and
                     their<br> respective value ranges - </p>
-                <p id="chart6a" ><img id="max4" src=" " style="width: 860px"></p>
+                <p id="chart6a" ><img id="max4" src=" " style="width: 860px">
+                    <input type="hidden" id="max4Hidden" name="max4Hidden" value=""></p>
 
 
                 <br>
@@ -443,6 +444,7 @@
                         </tr>
                         <tr>
                             <td id="sensor4" class="design21"></td>
+                            <input type="hidden" id="sensor4Hidden" name="sensor4Hidden" value="">
                         </tr>
                     </table>
                     <div class="popup" >
@@ -509,7 +511,8 @@
                         ranges for those four options and a <b style="color:#117B00 ">green vertical</b> line which is given Median value.<br>
                         Again, you have to check on which option’s horizontal bars are overlapped by the<br> green line -  </p>
                     <br>
-                    <p id="chart6b" ><img id="median4" src=" " style="width: 860px"></p>
+                    <p id="chart6b" ><img id="median4" src=" " style="width: 860px">
+                        <input type="hidden" id="median3Hidden" name="median3Hidden" value=""></p>
                     <br>
                     <div class='pdesign'>
                         <p>Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the <br>
@@ -770,6 +773,10 @@
         document.getElementById("max4").src = max4Images[max4Index];
         document.getElementById("sensor4").innerText = sensor4Names[sensor4Index];
         document.getElementById("median4").src = median4Images[median4Index];
+
+        document.getElementById("max4Hidden").value = max4Images[max4Index];
+        document.getElementById("sensor4Hidden").value = sensor4Names[sensor4Index];
+        document.getElementById("median4Hidden").value = median4Images[median4Index];
     }
 
     // Call the function to set values for the current user when the page loads

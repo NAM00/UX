@@ -372,7 +372,8 @@
             <h1 class='pdesign3'><b>Task1</b></h1><br>
             <p class='pdesign'>Now look into the chart given below. In the chart there are <b>four Options</b> and
                 their<br> respective value ranges - </p>
-            <p id="chart12a" ><img id="max1" src=""  style="width:860px"></p>
+            <p id="chart12a" ><img id="max1" src=""  style="width:860px">
+               <input type="hidden" id="max1Hidden" name="max1Hidden" value=""></p>
 
             <br>
             <div class='pdesign'>
@@ -439,6 +440,7 @@
                     </tr>
                     <tr>
                         <td id="sensor1" class="design21"></td>
+                        <input type="hidden" id="sensor1Hidden" name="sensor1Hidden" value="">
                     </tr>
                 </table>
                 <div class="popup" >
@@ -508,7 +510,8 @@
                     ranges for those four options and a <b style="color:#117B00 ">green vertical</b> line which is given Median value.<br>
                     Again, you have to check on which option’s horizontal bars are overlapped by the<br> green line -  </p>
                 <br>
-                <p id="chart12b" ><img id="median1" src="" style="width: 860px"></p>
+                <p id="chart12b" ><img id="median1" src="" style="width: 860px">
+                    <input type="hidden" id="median1Hidden" name="median1Hidden" value=""></p>
                 <br>
                 <div class='pdesign'>
                     <p>Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the <br>
@@ -765,6 +768,11 @@
         document.getElementById("max1").src = max1Images[max1Index];
         document.getElementById("sensor1").innerText = sensor1Names[sensor1Index];
         document.getElementById("median1").src = median1Images[median1Index];
+
+        document.getElementById("max1Hidden").value = max1Images[max1Index];
+        document.getElementById("sensor1Hidden").value = sensor1Names[sensor1Index];
+        document.getElementById("median1Hidden").value = median1Images[median1Index];
+
     }
 
         // Call the function to set values for the current user when the page loads
