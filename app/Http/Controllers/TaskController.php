@@ -14,7 +14,8 @@ class TaskController extends Controller
     {
         $CAMP_ID= $_GET['CAMP_ID'];
         $MWId= $_GET['MWId'];
-        print_r($CAMP_ID);
+        Session::put('CAMP_ID', $CAMP_ID);
+        Session::put('MWId', $MWId);
 
         return view('Task_Desc');
     }
@@ -39,19 +40,21 @@ class TaskController extends Controller
         {
             $subTask13 = null;
         }
+        $test=Session::get('CAMP_ID');
+
 
 
         if(Task::where('session_id', $session_id)->first())
         {
             $data = Task::where('session_id', $session_id)->first();
-            $data->sub_task_11 = $subTask11;
+            $data->sub_task_11 = $test;
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
             $data->update();        }
         else
         {
             $data = new Task();
-            $data->sub_task_11 = $subTask11;
+            $data->sub_task_11 = $test;
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
             $data->session_id = $session_id;
