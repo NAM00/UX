@@ -21,9 +21,10 @@ Route::get('/{campaignId}/{workerId}', function () {
     return view('Task_Desc');
 });
 
-Route::get('/CAMP_ID={campaignId}/MWId={workerId}', function () {
-    return view('Task_Desc');
-});
+
+
+Route::get('/CAMP_ID={campaignId}/MWId={workerId}', [\App\Http\Controllers\TaskController::class, 'index'])->name('index');
+
 
 Route::get('/home', function () {
     return view('Task_Desc');
