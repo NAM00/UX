@@ -112,7 +112,7 @@
                 <br><br><br>
                 <ul>
                     <p id="item1" class="selected"><img src="colours.jpg" class="img1">Task Description</p>
-                    <p id="item"><img src="white.jpg" class="img1">Main Task</p>
+                    <p id="item"><img src="../white.jpg" class="img1">Main Task</p>
                     <p id="item"><img src="white.jpg" class="img1">Survey</p>
                     <p id="item"><img src="white.jpg" class="img1">Payment Code</p>
                 </ul>
