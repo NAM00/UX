@@ -11,10 +11,12 @@ use DB;
 class TaskController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $CAMP_ID= $_GET['CAMP_ID'];
-        $MWId= $_GET['MWId'];
+        $CAMP_ID = $_GET['CAMP_ID'];
+        $MWId = $_GET['MWId'];
+        $key = $request->CAMP_ID;
+        echo $key;
         Session::put('CAMP_ID', $CAMP_ID);
         Session::put('MWId', $MWId);
 
