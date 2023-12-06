@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('Task_Desc');
 });
 
+Route::get('/{campaignId}/{workerId}', function () {
+    return view('Task_Desc');
+});
+
 Route::get('/home', function () {
     return view('Task_Desc');
 });
