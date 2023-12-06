@@ -372,7 +372,8 @@
             <h1 class='pdesign3'><b>Task1</b></h1><br>
             <p class='pdesign'>Now look into the chart given below. In the chart there are <b>four Options</b> and
                 their<br> respective value ranges - </p>
-            <p id="chart12a" ><img src="Max 12.jpg" style="width:860px"></p>
+            <p id="chart12a" ><img id="max1" src=""  style="width:860px">
+               <input type="hidden" id="max1Hidden" name="max1Hidden" value=""></p>
 
             <br>
             <div class='pdesign'>
@@ -438,7 +439,8 @@
                         <th class=design1>Sensor Name</th>
                     </tr>
                     <tr>
-                        <td id="sensor1" class="design21">outdoor<br> humidity</td>
+                        <td id="sensor1" class="design21"></td>
+                        <input type="hidden" id="sensor1Hidden" name="sensor1Hidden" value="">
                     </tr>
                 </table>
                 <div class="popup" >
@@ -508,7 +510,8 @@
                     ranges for those four options and a <b style="color:#117B00 ">green vertical</b> line which is given Median value.<br>
                     Again, you have to check on which option’s horizontal bars are overlapped by the<br> green line -  </p>
                 <br>
-                <p id="chart12b" ><img src="Median 12.jpg" style="width: 860px"></p>
+                <p id="chart12b" ><img id="median1" src="" style="width: 860px">
+                    <input type="hidden" id="median1Hidden" name="median1Hidden" value=""></p>
                 <br>
                 <div class='pdesign'>
                     <p>Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the <br>
@@ -746,7 +749,44 @@
             }, 2000); // Adjust the delay time (in milliseconds) as needed
         });
     });
-    history.pushState(null, null, document.URL);
+        // Function to set values for Max 12a, Sensor1, and Median 12b based on user index
+        function setValuesForUser(userIndex) {
+        // Define arrays of possible values for each element
+        const max1Images = ["Max1.jpg", "Max 2.jpg", "Max 3.jpg, Max 4.jpg, Max 5.jpg"]; // Replace with actual image URLs
+        const sensor1Names = ["temperature", "temperature board lan controller", "tC", "Swimming pool", "Boiler"]; // Replace with actual names
+        const median1Images = ["Median 1.jpg", "Median 2.jpg", "Median 3.jpg", "Median 4.jpg","Median 5"]; // Replace with actual image URLs
+
+        // Get the index for the current user based on the modulo of 6
+        const index = userIndex % 6;
+
+        // Calculate the index for each array based on the modulo of its length
+        const max1Index = index % max1Images.length;
+        const sensor1Index = index % sensor1Names.length;
+        const median1Index = index % median1Images.length;
+
+        // Set values for the elements based on the calculated indices
+        document.getElementById("max1").src = max1Images[max1Index];
+        document.getElementById("sensor1").innerText = sensor1Names[sensor1Index];
+        document.getElementById("median1").src = median1Images[median1Index];
+
+        document.getElementById("max1Hidden").value = max1Images[max1Index];
+        document.getElementById("sensor1Hidden").value = sensor1Names[sensor1Index];
+        document.getElementById("median1Hidden").value = median1Images[median1Index];
+
+    }
+
+        // Call the function to set values for the current user when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+        // Get the user index from wherever it is available (e.g., user ID, session, etc.)
+        const userIndex = 0; // Replace this with the actual user index
+
+        setValuesForUser(userIndex);
+    });
+
+
+
+
+history.pushState(null, null, document.URL);
     window.addEventListener('popstate', function () {
         history.pushState(null, null, document.URL);
     });
