@@ -9,21 +9,17 @@ use DB;
 
 class TaskController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
+        $CAMP_ID= $_GET['CAMP_ID'];
+        $MWId= $_GET['MWId'];
+        print_r($CAMP_ID);
+
         return view('Task_Desc');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         //
