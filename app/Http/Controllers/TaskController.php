@@ -52,18 +52,22 @@ class TaskController extends Controller
         if(Task::where('session_id', $session_id)->first())
         {
             $data = Task::where('session_id', $session_id)->first();
-            $data->sub_task_11 = $test;
+            $data->sub_task_11 = $subTask11;
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
-            $data->update();        }
+            $data->update();
+            Session::flash('alert-success', 'success');
+        }
         else
         {
             $data = new Task();
-            $data->sub_task_11 = $test;
+            $data->sub_task_11 = $subTask11;
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
             $data->session_id = $session_id;
             $data->save();
+            Session::flash('alert-success', 'success');
+
         }
 
         return view('mainTask2');
