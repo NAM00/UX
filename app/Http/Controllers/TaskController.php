@@ -18,6 +18,7 @@ class TaskController extends Controller
         $key = $request->CAMP_ID;
 
         echo $key;
+        return $key;
 
         Session::put('CAMP_ID', $CAMP_ID);
         Session::put('MWId', $MWId);
