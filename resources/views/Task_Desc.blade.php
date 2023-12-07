@@ -111,10 +111,10 @@
             <div class="side-bar">
                 <br><br><br>
                 <ul>
-                    <p id="item1" class="selected"><img src="colours.jpg" class="img1">Task Description</p>
+                    <p id="item1" class="selected"><img src="../colours.jpg" class="img1">Task Description</p>
                     <p id="item"><img src="../white.jpg" class="img1">Main Task</p>
-                    <p id="item"><img src="white.jpg" class="img1">Survey</p>
-                    <p id="item"><img src="white.jpg" class="img1">Payment Code</p>
+                    <p id="item"><img src="../white.jpg" class="img1">Survey</p>
+                    <p id="item"><img src="../white.jpg" class="img1">Payment Code</p>
                 </ul>
             </div>
         </div>
@@ -146,8 +146,8 @@
                         Again, you will check in which range the <b style="color:#716EF9">Given</b> value lies from the <b style="color:#BFD004">Reference</b> value <br>range.<br><br>
                         <b style="color:red;font-size: 32px">Always Look at the green tips boxes before selecting<br> an option. You will
                         get important instructions there!!!</b><br>
-                        <p style="margin-left: 250px;"><img src="arrow.jpeg"></p>
-                        <p style="margin-left: 142px;"><img src="read_me.jpeg"></p><br>
+                        <p style="margin-left: 250px;"><img src="../arrow.jpeg"></p>
+                        <p style="margin-left: 142px;"><img src="../read_me.jpeg"></p><br>
                     You have to complete <b>4 tasks</b> to get the payment.
 
                 </div>

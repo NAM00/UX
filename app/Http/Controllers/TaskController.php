@@ -56,7 +56,6 @@ class TaskController extends Controller
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
             $data->update();
-            Session::flash('alert-success', 'success');
         }
         else
         {
@@ -66,7 +65,6 @@ class TaskController extends Controller
             $data->sub_task_13 = $subTask13;
             $data->session_id = $session_id;
             $data->save();
-            Session::flash('alert-success', 'success');
 
         }
 
