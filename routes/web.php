@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 
 
-Route::get('/CAMP_ID={campaignId}&MWId={workerId}', [\App\Http\Controllers\TaskController::class, 'index'])->name('index');
+Route::get('/CAMP_ID={campaignId}/MWId={workerId}', [\App\Http\Controllers\TaskController::class, 'index'])->name('index');
 
 
 Route::get('/home', function () {
