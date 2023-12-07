@@ -13,9 +13,8 @@ class TaskController extends Controller
 
     public function index(Request $request)
     {
-        $CAMP_ID = $_GET['CAMP_ID'];
-        $MWId = $_GET['MWId'];
-        $key = $request->CAMP_ID;
+
+        $key = $request->campaignId;
 
         echo $key;
         return $key;
