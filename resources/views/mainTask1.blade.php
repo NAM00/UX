@@ -754,7 +754,7 @@
         // Define arrays of possible values for each element
         const max1Images = ["Max1.jpg", "Max 2.jpg", "Max 3.jpg, Max 4.jpg, Max 5.jpg"]; // Replace with actual image URLs
         const sensor1Names = ["temperature", "temperature board lan controller", "tC", "Swimming pool", "Boiler"]; // Replace with actual names
-        const median1Images = ["Median 1.jpg", "Median 2.jpg", "Median 3.jpg", "Median 4.jpg","Median 5"]; // Replace with actual image URLs
+        const median1Images = ["Median 1.jpg", "Median 2.jpg", "Median 3.jpg", "Median 4.jpg","Median 5.jpg"]; // Replace with actual image URLs
 
         // Get the index for the current user based on the modulo of 6
         const index = userIndex % 6;
