@@ -14,10 +14,8 @@ class TaskController extends Controller
     public function index(Request $request)
     {
 
-        $key = $request->campaignId;
-
-        echo $key;
-        return $key;
+        $CAMP_ID = $request->campaignId;
+        $MWId = $request->workerId;
 
         Session::put('CAMP_ID', $CAMP_ID);
         Session::put('MWId', $MWId);
