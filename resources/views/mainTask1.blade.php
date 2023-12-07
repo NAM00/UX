@@ -377,10 +377,10 @@
 
             <br>
             <div class='pdesign'>
-                <p> Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the<br> <b style="color:#FF50ED"> Vertical Purple</b>.
+                <p> Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the<br> <b style="color:#FF50ED"> Vertical Pink</b>. Here, <b style="color:#FF50ED"> Vertical Pink</b> indicates the <b style="color:#D48C00">Given Value</b>.
                     Select that option below -<br><br>
 
-                    If the given value overlaps with more than one options, just select any random one <br>option and go to the next step to verify more.
+                    If the given value falls within the range of more than one option, simply choose any of <br>those options randomly and proceed to the next step to verify more.
 
 
                 </p>
@@ -406,7 +406,7 @@
                     </label> Rain<br>
                 </div>
                 <div class="popup" >
-                    <img src="pop1.jpeg" class="popup1">
+                    <img src="pop1.jpg" class="popup1">
                 </div>
                 <br><br>
 

@@ -125,26 +125,20 @@
                 <h1 class='pdesign1'><b>Task Description</b></h1><br><br>
 
                 <div class='pdesign'>
-                    <p>You have to select <b>One</b> answer from <b>Four</b> options -<b> Temperature, Humidity,<br> Pressure & Rain.</b>
+                    <br>You have to select <b>One</b> answer from <b>Four</b> options -<b> Temperature, Humidity,<br> Pressure & Rain.</b>
                         <br><br>
-                        You will get a <b style="color:#716EF9">Given range</b> and <b style="color:#BFD004">Reference range</b> of values related with these four<br>options.
-                        You task is to compare these<b style="color:#716EF9"> given values</b> with the <b style="color:#BFD004">reference values</b> and <br>find out the right option.
-                        <br><br>
+                        You will be given a range of values for temperature, humidity, pressure, and rain, along <br>  with standard
+                        <b style="color:#0075FF">Reference Ranges</b> for each. Your job is to compare the <b style="color:#D48C00"> Given Values</b> <br>
+                        with the <b style="color:#0075FF">Reference Values</b> and choose the correct option.<br><br>
                         <b>Step 1:</b><br><br>
-                        You will see - 1.  <b style="color:#BFD004">Reference</b> Maximum & Minimum values Range for all four options<br>
-                    <p style="margin-left: 142px;">2. A <b style="color:#716EF9">Given</b> maximum & Minimum Range of the right option</p>
-                        You have to check in which <b style="color:#BFD004">Reference</b> Range does the <b style="color:#716EF9">Given</b> Range match.
-                        .<br><br>
-                        <b>Step 2:</b><br><br>
-                        You will get a <b style="color:#2323FFB8">Sensor Name</b> and a <b style="color:#D48C00">Channel Name</b> of the right option.<br>
-                        You have to check if the <b style="color:#2323FFB8">Sensor Name</b> or the <b style="color:#D48C00">Channel Name</b> have any literal/<br>
-                        verbatim similarity with any of the four options.<br><br>
-                        <b style="font-size: 32px;color:red"> Sensor names get more priority than channel names.</b><br><br>
+                        You will have two sets of ranges: one showing the <b style="color:#0075FF"> Reference</b> Maximum and Minimum<br> values for temperature, humidity, pressure, and rain, and the other indicating the<br> <b style="color:#D48C00">Given</b> Maximum and Minimum range for the correct option. Your task is to determine <br>which category the <b style="color:#D48C00">Given Range</b> falls into within the  <b style="color:#0075FF"> Reference values</b>.
+                        <br><br><b>Step 2:</b><br><br>
+                        You will receive a <b>Sensor Name</b> associated with the correct option. Your task is to<br> check if the <b>Sensor Name</b> has any direct similarity with any of the four options.<br><br>
+{{--                        <b style="font-size: 32px;color:red"> Sensor names get more priority than channel names.</b><br><br>--}}
                         <b>Step 3:</b><br><br>
-                        You will get - 1.  <b style="color:#BFD004">Reference</b> value range for each of the options<br>
-                        <p style="margin-left: 142px;">2. A <b style="color:#716EF9">Given</b> value of the right option</p>
-                        Again, you will check in which range the <b style="color:#716EF9">Given</b> value lies from the <b style="color:#BFD004">Reference</b> value <br>range.<br><br>
-                        <b style="color:red;font-size: 32px">Always Look at the green tips boxes before selecting<br> an option. You will
+                        You will be provided with two sets of information: the <b style="color:#0075FF"> Reference Value</b> range <br> for each option and the <b style="color:#D48C00">Given Value</b> for the correct option. Once again, your task <br> is to determine in which range the <b style="color:#D48C00">Given Value</b>  falls within the <b style="color:#0075FF"> Reference Value</b><br> range.
+                        <br><br>
+                        <b style="color:red;font-size: 32px">Always look at the green tips boxes before selecting<br> an option. You will
                         get important instructions there!!!</b><br>
                         <p style="margin-left: 250px;"><img src="../arrow.jpeg"></p>
                         <p style="margin-left: 142px;"><img src="../read_me.jpeg"></p><br>
