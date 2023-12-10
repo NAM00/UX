@@ -17,10 +17,58 @@ class TaskController extends Controller
         $CAMP_ID = $request->campaignId;
         $MWId = $request->workerId;
 
-        Session::put('CAMP_ID', $CAMP_ID);
-        Session::put('MWId', $MWId);
+        if(Task::where('worker_id', $MWId)->first())
+        {
 
-        return view('Task_Desc');
+        }
+        else
+        {
+            Session::put('CAMP_ID', $CAMP_ID);
+            Session::put('MWId', $MWId);
+
+            if(Task::count())
+            {
+                $row_count = Task::count();
+                if($row_count > 0 AND $row_count <= 6 )
+                {
+                    $type = 1;
+                }
+                elseif($row_count > 6 AND $row_count <= 12 )
+                {
+                    $type = 2;
+                }
+                elseif($row_count > 12 AND $row_count <= 18 )
+                {
+                    $type = 3;
+                }
+                elseif($row_count > 18 AND $row_count <= 24 )
+                {
+                    $type = 4;
+                }
+                elseif($row_count > 24 AND $row_count <= 30 )
+                {
+                    $type = 5;
+                }
+                else
+                {
+                    $type = 1;
+                }
+
+                Session::put('type', $type);
+
+            }
+            else
+            {
+
+            }
+
+
+            return view('Task_Desc')->with('type', $type);
+
+
+        }
+
+
 
 
     }
@@ -45,7 +93,10 @@ class TaskController extends Controller
         {
             $subTask13 = null;
         }
-        $test=Session::get('CAMP_ID');
+        $worker_id=Session::get('$MWId');
+        $type_id=Session::get('$type');
+
+
 
 
 
@@ -64,6 +115,8 @@ class TaskController extends Controller
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
             $data->session_id = $session_id;
+            $data->worker_id = $worker_id;
+            $data->type_id = $type_id;
             $data->save();
 
         }
