@@ -16,6 +16,7 @@ class TaskController extends Controller
 
         $CAMP_ID = $request->campaignId;
         $MWId = $request->workerId;
+        $type = 1;
 
         if(Task::where('worker_id', $MWId)->first())
         {
