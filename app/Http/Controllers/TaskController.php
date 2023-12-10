@@ -25,6 +25,7 @@ class TaskController extends Controller
         {
             Session::put('CAMP_ID', $CAMP_ID);
             Session::put('MWId', $MWId);
+            return Task::count();
 
             if(Task::count())
             {
