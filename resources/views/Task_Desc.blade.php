@@ -125,6 +125,7 @@
                 <h1 class='pdesign1'><b>Task Description</b></h1><br><br>
 
                 <div class='pdesign'>
+                    <input type="hidden" id="typeId" name="typeId" value="{{$type}}">
                     <br>You have to select <b>One</b> answer from <b>Four</b> options -<b> Temperature, Humidity,<br> Pressure & Rain.</b>
                         <br><br>
                         You will be given a range of values for temperature, humidity, pressure, and rain, along <br>  with standard

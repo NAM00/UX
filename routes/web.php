@@ -12,21 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('Task_Desc');
 });
-
+*/
 
 
 
 Route::get('/{campaignId}/{workerId}', [\App\Http\Controllers\TaskController::class, 'index'])->name('index');
 
-
+/*
 Route::get('/home', function () {
     return view('Task_Desc');
 });
-
+*/
 Route::get('/task1', function () {
     return view('mainTask1');
 })->name('task1');
