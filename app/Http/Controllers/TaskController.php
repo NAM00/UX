@@ -94,10 +94,10 @@ class TaskController extends Controller
         {
             $subTask13 = null;
         }
-        $worker_id=Session::get('$MWId');
+        $worker_id=Session::get('MWId');
         echo $worker_id;
 
-        $type_id=Session::get('$type');
+        $type_id=Session::get('type');
 
 
 
