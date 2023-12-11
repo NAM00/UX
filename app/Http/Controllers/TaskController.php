@@ -26,11 +26,8 @@ class TaskController extends Controller
         }
         else
         {
-            Session::put('CAMP_ID', $CAMP_ID);
             Session::put('MWId', $MWId);
-            session()->put('MWId', $MWId);
-
-            session(['MWId' => $MWId]);
+            Session::save();
 
             $worker_id=Session::get('MWId');
             echo $worker_id;
