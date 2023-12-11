@@ -16,7 +16,6 @@ class TaskController extends Controller
 
         $CAMP_ID = $request->campaignId;
         $MWId = $request->workerId;
-        echo $MWId;
         $type = 1;
 
         if(Task::where('worker_id', $MWId)->first())
@@ -96,6 +95,8 @@ class TaskController extends Controller
             $subTask13 = null;
         }
         $worker_id=Session::get('$MWId');
+        echo $worker_id;
+
         $type_id=Session::get('$type');
 
 
