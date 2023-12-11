@@ -18,12 +18,12 @@ class TaskController extends Controller
 
         $workerId = $request->workerId;
         $type = 1;
-        $test = $request->session()->put('MWId', $workerId);
-        $worker = session('MWId');
+        $test = $request->session()->put('worker_id', $workerId);
+        $worker = session('worker_id');
 
         echo $worker;
 
-        if(Task::where('worker_id', $MWId)->first())
+        if(Task::where('worker_id', $workerId)->first())
         {
 
         }
@@ -87,7 +87,7 @@ class TaskController extends Controller
 
     public function store_mainTask1(Request $request)
     {
-        $worker = session('MWId');
+        $worker = session('worker_id');
 
         $session_id = session()->getId();
         $subTask11 = $request->post("subTask11");
