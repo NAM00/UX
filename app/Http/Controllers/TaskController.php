@@ -102,7 +102,7 @@ class TaskController extends Controller
         }
 
 
-        $type_id=Session::get('type');
+        $type_id=1;
 
 
 
