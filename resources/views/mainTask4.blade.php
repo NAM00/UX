@@ -513,7 +513,7 @@
                         Again, you have to check on which option’s horizontal bars are overlapped by the<br> green line -  </p>
                     <br>
                     <p id="chart6b" ><img id="median4" src=" " style="width: 860px">
-                        <input type="hidden" id="median3Hidden" name="median3Hidden" value=""></p>
+                        <input type="hidden" id="median4Hidden" name="median4Hidden" value=""></p>
                     <br>
                     <div class='pdesign'>
                         <p>Check which horizontal bar (Red, Yellow, Green or Blue) is overlapped with the <br>
@@ -756,37 +756,38 @@
             }, 2000); // Adjust the delay time (in milliseconds) as needed
         });
     });
-    function setValuesForUser(userIndex) {
-        // Define arrays of possible values for each element
-        const max4Images = ["Max 16.jpg", "Max 17.jpg", "Max 18.jpg, Max 19.jpg, Max 20.jpg"]; // Replace with actual image URLs
-        const sensor4Names = ["Pressure", "Station1", "blast", "[HPa] BMP","Air"]; // Replace with actual names
-        const median4Images = ["Median 16.jpg", "Median 17.jpg", "Median 18.jpg","Median 19.jpg","Median 20.jpg"]
+    var storedValue = sessionStorage.getItem("typeIdValue");
+    var max4Image = document.getElementById("max4");
+    var sensor4 = document.getElementById("sensor4");
+    var median4Image= document.getElementById("median4");
 
-        // Get the index for the current user based on the modulo of 6
-        const index = userIndex % 6;
+    if(storedValue===1){
+        max4Image.src = "Max1.jpg";
+        sensor4.innerText="temperature";
+        median4Image.src = "Median 1.jpg";
 
-        // Calculate the index for each array based on the modulo of its length
-        const max4Index = index % max4Images.length;
-        const sensor4Index = index % sensor4Names.length;
-        const median4Index = index % median4Images.length;
 
-        // Set values for the elements based on the calculated indices
-        document.getElementById("max4").src = max4Images[max4Index];
-        document.getElementById("sensor4").innerText = sensor4Names[sensor4Index];
-        document.getElementById("median4").src = median4Images[median4Index];
-
-        document.getElementById("max4Hidden").value = max4Images[max4Index];
-        document.getElementById("sensor4Hidden").value = sensor4Names[sensor4Index];
-        document.getElementById("median4Hidden").value = median4Images[median4Index];
     }
-
-    // Call the function to set values for the current user when the page loads
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the user index from wherever it is available (e.g., user ID, session, etc.)
-        const userIndex = 0; // Replace this with the actual user index
-
-        setValuesForUser(userIndex);
-    });
+    else if(storedValue===2){
+        max4Image.src = "Max 15.jpg";
+        sensor4.innerText="%";
+        median4Image.src = "Median 15.jpg";
+    }
+    else if (storedValue===3){
+        max4Image.src = "Max 17.jpg";
+        sensor4.innerText="Station1";
+        median4Image.src = "Median 17.jpg";
+    }
+    else if (storedValue===4){
+        max4Image.src = "Max 19.jpg";
+        sensor4.innerText=" [HPa] BMP";
+        median4Image.src = "Median 19.jpg";
+    }
+    else if (storedValue===5){
+        max4Image.src = "Max 13.jpg";
+        sensor4.innerText="Moisture";
+        median4Image.src = "Median 13.jpg";
+    }
     history.pushState(null, null, document.URL);
     window.addEventListener('popstate', function () {
         history.pushState(null, null, document.URL);
