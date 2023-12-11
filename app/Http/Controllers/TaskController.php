@@ -86,8 +86,9 @@ class TaskController extends Controller
 
     public function store_mainTask1(Request $request)
     {
-        $worker_id = Session::get('MWId');
-        return $worker_id ;
+        $worker = session('MWId');
+        $data = $request->session()->all();
+        return $data ;
         $session_id = session()->getId();
         $subTask11 = $request->post("subTask11");
         $subTask12 = $request->post("subTask12");
