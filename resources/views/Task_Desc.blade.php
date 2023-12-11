@@ -180,5 +180,13 @@
 
     console.log(storedValue);
 
+    var workerIdValue = document.getElementById("workerId").value;
+
+    sessionStorage.setItem("workerIdValue", workerIdValue);
+
+    var storedValuewd = sessionStorage.getItem("workerIdValue");
+
+    console.log(workerIdValue);
+
 
     </script>
