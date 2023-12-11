@@ -18,8 +18,7 @@ class TaskController extends Controller
 
         $workerId = $request->workerId;
         $type = 1;
-        $test = $request->session()->put('worker_id', $workerId);
-        $worker = session('worker_id');
+
 
         if(Task::where('worker_id', $workerId)->first())
         {
@@ -57,7 +56,6 @@ class TaskController extends Controller
                     $type = 1;
                 }
 
-                Session::put('type', $type);
 
             }
             else
@@ -85,11 +83,13 @@ class TaskController extends Controller
 
     public function store_mainTask1(Request $request)
     {
-        $worker = session('worker_id');
 
         $session_id = session()->getId();
         $subTask11 = $request->post("subTask11");
         $subTask12 = $request->post("subTask12");
+        $worker_id = $request->post("workerId");
+        $type_id = $request->post("typeId");
+
         if($request->post("subTask13") !== null)
         {
             $subTask13 = $request->post("subTask13");
@@ -100,7 +100,6 @@ class TaskController extends Controller
         }
 
 
-        $type_id=1;
 
 
 
@@ -121,7 +120,7 @@ class TaskController extends Controller
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
             $data->session_id = $session_id;
-            $data->worker_id = $worker;
+            $data->worker_id = $worker_id;
             $data->type_id = $type_id;
             $data->save();
 

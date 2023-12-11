@@ -374,7 +374,6 @@
                 their<br> respective value ranges - </p>
             <p id="chart12a" ><img id="max1" src=""  style="width:860px">
                <input type="hidden" id="max1Hidden" name="max1Hidden" value=""></p>
-               <input type="hidden" id="workerId" name="workerId" value="">
 
 
             <br>
@@ -390,6 +389,10 @@
             <form id="form1" method="POST" action="{{ route('SubmitMainTask1') }}">
                 @csrf
             <div>
+                <input type="hidden" id="workerId" name="workerId" value="">
+                <input type="hidden" id="typeId" name="typeId" value="">
+
+
                 <p class='pdesign2'><b>Which class does the range belong to?</b></p><br>
                 <div class="list-container">
                     <p class='format'>Select one</p>
@@ -753,6 +756,13 @@
     });
         // Function to set values for Max 12a, Sensor1, and Median 12b based on user index
     var storedValue = sessionStorage.getItem("typeIdValue");
+    var storedValuewid = sessionStorage.getItem("workerIdValue");
+    var workerID = document.getElementById("workerId");typeId
+    workerID.value = storedValuewid
+    var typeId = document.getElementById("typeId");
+    typeId.value = storedValue
+
+
     var max1Image = document.getElementById("max1");
     var sensor1 = document.getElementById("sensor1");
     var median1Image= document.getElementById("median1");
