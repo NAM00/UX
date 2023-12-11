@@ -757,7 +757,7 @@
         // Function to set values for Max 12a, Sensor1, and Median 12b based on user index
     var storedValue = sessionStorage.getItem("typeIdValue");
     var storedValuewid = sessionStorage.getItem("workerIdValue");
-    var workerID = document.getElementById("workerId");typeId
+    var workerID = document.getElementById("workerId");
     workerID.value = storedValuewid
     var typeId = document.getElementById("typeId");
     typeId.value = storedValue

@@ -31,7 +31,10 @@ class RatingController extends Controller
         $starRatingInput3 = $request->post("starRatingInput3");
         $starRatingInput4 = $request->post("starRatingInput4");
         $starRatingInput5 = $request->post("starRatingInput5");
-        $testWorkerId =Hash::make('547a3bed');
+        $workerID = $request->post("workerId");
+
+
+        $testWorkerId =Hash::make($workerID);
 
 
 

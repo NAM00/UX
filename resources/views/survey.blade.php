@@ -245,6 +245,8 @@
                     <form id="surveyForm" method="POST" action="{{ route('RatingSubmit') }}">
                         @csrf
                         <br>
+                        <input type="hidden" id="workerId" name="workerId" value="">
+
                         <p class="image1"><img src="1.jpeg"></p>
                         <div class="star-rating" style="margin-left: 80px" data-rating="0">
                             <span class="star" data-value="1"><i class="fas fa-star"></i></span>
@@ -316,6 +318,10 @@
 
 </html>
 <script>
+    var storedValuewid = sessionStorage.getItem("workerIdValue");
+    var workerID = document.getElementById("workerId");
+    workerID.value = storedValuewid
+
 // Get a reference to the item with id "item1"
 const item1 = document.getElementById("item1");
 
