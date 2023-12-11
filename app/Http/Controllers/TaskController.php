@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\View;
 use DB;
+use Session;
+
 
 class TaskController extends Controller
 {
@@ -26,6 +28,10 @@ class TaskController extends Controller
         {
             Session::put('CAMP_ID', $CAMP_ID);
             Session::put('MWId', $MWId);
+            session()->put('MWId', $MWId);
+
+            session(['MWId' => $MWId]);
+
             $worker_id=Session::get('MWId');
             echo $worker_id;
 
