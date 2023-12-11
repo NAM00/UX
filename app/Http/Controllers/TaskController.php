@@ -16,9 +16,9 @@ class TaskController extends Controller
     {
         $request->session()->flush();
 
-        $MWId = $request->workerId;
+        $workerId = $request->workerId;
         $type = 1;
-        $test = $request->session()->put('MWId', $MWId);
+        $test = $request->session()->put('MWId', $workerId);
         $worker = session('MWId');
 
         echo $worker;
@@ -68,7 +68,7 @@ class TaskController extends Controller
             }
 
 
-            return view('Task_Desc')->with('type', $type);
+            return view('Task_Desc')->with(["type"=>$type , "workerId"=>$workerId ]);
 
 
         }
@@ -88,7 +88,7 @@ class TaskController extends Controller
     public function store_mainTask1(Request $request)
     {
         $worker = session('MWId');
-        return $worker ;
+
         $session_id = session()->getId();
         $subTask11 = $request->post("subTask11");
         $subTask12 = $request->post("subTask12");
@@ -123,7 +123,7 @@ class TaskController extends Controller
             $data->sub_task_12 = $subTask12;
             $data->sub_task_13 = $subTask13;
             $data->session_id = $session_id;
-            $data->worker_id = $worker_id;
+            $data->worker_id = $worker;
             $data->type_id = $type_id;
             $data->save();
 
