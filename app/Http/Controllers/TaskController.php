@@ -14,6 +14,7 @@ class TaskController extends Controller
 
     public function index(Request $request)
     {
+        $request->session()->flush();
 
         $MWId = $request->workerId;
         $type = 1;
@@ -86,7 +87,7 @@ class TaskController extends Controller
     public function store_mainTask1(Request $request)
     {
         $worker_id = Session::get('MWId');
-        return $worker_id;
+        return $worker_id ;
         $session_id = session()->getId();
         $subTask11 = $request->post("subTask11");
         $subTask12 = $request->post("subTask12");
