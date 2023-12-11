@@ -752,29 +752,29 @@
     var sensor2 = document.getElementById("sensor2");
     var median2Image= document.getElementById("median2");
 
-    if(storedValue===1){
+    if(storedValue==1){
         max2Image.src = "Max 9.jpg";
         sensor2.innerText="Precipitation ml / m²";
         median2Image.src = "Median 9.jpg";
 
 
     }
-    else if(storedValue===2){
+    else if(storedValue==2){
         max2Image.src = "Max 16.jpg";
         sensor2.innerText="Pressure";
         median2Image.src = "Median 16.jpg";
     }
-    else if (storedValue===3){
+    else if (storedValue==3){
         max2Image.src = "Max 11.jpg";
         sensor2.innerText="humidity";
         median2Image.src = "Median 11.jpg";
     }
-    else if (storedValue===4){
+    else if (storedValue==4){
         max2Image.src = "Max 5.jpg";
         sensor2.innerText= "Boiler";
         median2Image.src = "Median 5.jpg";
     }
-    else if (storedValue===5){
+    else if (storedValue==5){
         max2Image.src = "Max 20.jpg";
         sensor2.innerText="Air";
         median2Image.src = "Median 20.jpg";

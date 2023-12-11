@@ -761,29 +761,29 @@
     var sensor4 = document.getElementById("sensor4");
     var median4Image= document.getElementById("median4");
 
-    if(storedValue===1){
+    if(storedValue==1){
         max4Image.src = "Max1.jpg";
         sensor4.innerText="temperature";
         median4Image.src = "Median 1.jpg";
 
 
     }
-    else if(storedValue===2){
+    else if(storedValue==2){
         max4Image.src = "Max 15.jpg";
         sensor4.innerText="%";
         median4Image.src = "Median 15.jpg";
     }
-    else if (storedValue===3){
+    else if (storedValue==3){
         max4Image.src = "Max 17.jpg";
         sensor4.innerText="Station1";
         median4Image.src = "Median 17.jpg";
     }
-    else if (storedValue===4){
+    else if (storedValue==4){
         max4Image.src = "Max 19.jpg";
         sensor4.innerText=" [HPa] BMP";
         median4Image.src = "Median 19.jpg";
     }
-    else if (storedValue===5){
+    else if (storedValue==5){
         max4Image.src = "Max 13.jpg";
         sensor4.innerText="Moisture";
         median4Image.src = "Median 13.jpg";

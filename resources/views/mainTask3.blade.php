@@ -757,29 +757,29 @@
     var sensor3 = document.getElementById("sensor3");
     var median3Image= document.getElementById("median3");
 
-    if(storedValue===1){
+    if(storedValue==1){
         max3Image.src = "Max 18.jpg";
         sensor3.innerText="blast";
         median3Image.src = "Median 18.jpg";
 
 
     }
-    else if(storedValue===2){
+    else if(storedValue==2){
         max3Image.src = "Max 2.jpg";
         sensor3.innerText="Temperatura board lan controller";
         median3Image.src = "Median 2.jpg";
     }
-    else if (storedValue===3){
+    else if (storedValue==3){
         max3Image.src = "Max 20.jpg";
         sensor3.innerText="Intensity of precipitation";
         median3Image.src = "Median 20.jpg";
     }
-    else if (storedValue===4){
+    else if (storedValue==4){
         max3Image.src = "Max 6.jpg";
         sensor3.innerText=" Rain mm";
         median3Image.src = "Median 6.jpg";
     }
-    else if (storedValue===5){
+    else if (storedValue==5){
         max3Image.src = "Max 7.jpg";
         sensor3.innerText="Rain";
         median3Image.src = "Median 7.jpg";

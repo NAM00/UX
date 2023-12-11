@@ -767,29 +767,29 @@
     var sensor1 = document.getElementById("sensor1");
     var median1Image= document.getElementById("median1");
 
-    if(storedValue===1){
+    if(storedValue==1){
         max1Image.src = "Max 12.jpg";
         sensor1.innerText="outdoor humidity";
         median1Image.src = "Median 12.jpg";
 
 
     }
-    else if(storedValue===2){
+    else if(storedValue==2){
         max1Image.src = "Max 8.jpg";
         sensor1.innerText="Rain detector temp";
         median1Image.src = "Median 8.jpg";
     }
-    else if (storedValue===3){
+    else if (storedValue==3){
         max1Image.src = "Max 3.jpg";
         sensor1.innerText="tC";
         median1Image.src = "Median 3.jpg";
     }
-    else if (storedValue===4){
+    else if (storedValue==4){
         max1Image.src = "Max 14.jpg";
         sensor1.innerText=" rH%";
         median1Image.src = "Median 14.jpg";
     }
-    else if (storedValue===5){
+    else if (storedValue==5){
         max1Image.src = "Max 4.jpg";
         sensor1.innerText="Swimming pool";
         median1Image.src = "Median 4.jpg";
