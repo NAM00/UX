@@ -21,8 +21,6 @@ class TaskController extends Controller
         $test = $request->session()->put('worker_id', $workerId);
         $worker = session('worker_id');
 
-        echo $worker;
-
         if(Task::where('worker_id', $workerId)->first())
         {
 
