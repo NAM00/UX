@@ -19,7 +19,9 @@ class TaskController extends Controller
         $MWId = $request->workerId;
         $type = 1;
         $test = $request->session()->put('MWId', $MWId);
-        echo $test;
+        $worker = session('MWId');
+
+        echo $worker;
 
         if(Task::where('worker_id', $MWId)->first())
         {
