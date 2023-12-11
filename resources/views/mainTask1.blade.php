@@ -374,6 +374,8 @@
                 their<br> respective value ranges - </p>
             <p id="chart12a" ><img id="max1" src=""  style="width:860px">
                <input type="hidden" id="max1Hidden" name="max1Hidden" value=""></p>
+               <input type="hidden" id="workerId" name="workerId" value="">
+
 
             <br>
             <div class='pdesign'>
