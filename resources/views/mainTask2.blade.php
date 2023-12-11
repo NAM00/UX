@@ -747,37 +747,38 @@
             }, 2000); // Adjust the delay time (in milliseconds) as needed
         });
     });
-    function setValuesForUser(userIndex) {
-        // Define arrays of possible values for each element
-        const max2Images = ["Max 6.jpg", "Max 7.jpg", "Max 8.jpg, Max 9.jpg, Max 10.jpg"]; // Replace with actual image URLs
-        const sensor2Names = ["Rain mm", "Rain", "Rain detector temp", "Precipitation ml / m²","Intensity of precipitation"]; // Replace with actual names
-        const median2Images = ["Median 6.jpg", "Median 7.jpg", "Median 8.jpg", "Median 9.jpg","Median 12.jpg"]; // Replace with actual image URLs
+    var storedValue = sessionStorage.getItem("typeIdValue");
+    var max2Image = document.getElementById("max2");
+    var sensor2 = document.getElementById("sensor2");
+    var median2Image= document.getElementById("median2");
 
-        // Get the index for the current user based on the modulo of 6
-        const index = userIndex % 6;
+    if(storedValue===1){
+        max2Image.src = "Max 9.jpg";
+        sensor2.innerText="Precipitation ml / m²";
+        median2Image.src = "Median 9.jpg";
 
-        // Calculate the index for each array based on the modulo of its length
-        const max2Index = index % max2Images.length;
-        const sensor2Index = index % sensor2Names.length;
-        const median2Index = index % median2Images.length;
 
-        // Set values for the elements based on the calculated indices
-        document.getElementById("max2").src = max2Images[max2Index];
-        document.getElementById("sensor2").innerText = sensor2Names[sensor2Index];
-        document.getElementById("median2").src = median2Images[median2Index];
-
-        document.getElementById("max2Hidden").value = max2Images[max2Index];
-        document.getElementById("sensor2Hidden").value = sensor2Names[sensor2Index];
-        document.getElementById("median2Hidden").value = median2Images[median2Index];
     }
-
-    // Call the function to set values for the current user when the page loads
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the user index from wherever it is available (e.g., user ID, session, etc.)
-        const userIndex = 0; // Replace this with the actual user index
-
-        setValuesForUser(userIndex);
-    });
+    else if(storedValue===2){
+        max2Image.src = "Max 16.jpg";
+        sensor2.innerText="Pressure";
+        median2Image.src = "Median 16.jpg";
+    }
+    else if (storedValue===3){
+        max2Image.src = "Max 11.jpg";
+        sensor2.innerText="humidity";
+        median2Image.src = "Median 11.jpg";
+    }
+    else if (storedValue===4){
+        max2Image.src = "Max 5.jpg";
+        sensor2.innerText= "Boiler";
+        median2Image.src = "Median 5.jpg";
+    }
+    else if (storedValue===5){
+        max2Image.src = "Max 20.jpg";
+        sensor2.innerText="Air";
+        median2Image.src = "Median 20.jpg";
+    }
 
     history.pushState(null, null, document.URL);
     window.addEventListener('popstate', function () {
