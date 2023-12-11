@@ -15,9 +15,9 @@ class TaskController extends Controller
     public function index(Request $request)
     {
 
-        $CAMP_ID = $request->campaignId;
         $MWId = $request->workerId;
         $type = 1;
+        $request->session()->put('MWId', $MWId);
 
         if(Task::where('worker_id', $MWId)->first())
         {
@@ -25,8 +25,6 @@ class TaskController extends Controller
         }
         else
         {
-            Session::put('MWId', $MWId);
-            Session::save();
 
             $worker_id=Session::get('MWId');
             echo $worker_id;
@@ -87,6 +85,8 @@ class TaskController extends Controller
 
     public function store_mainTask1(Request $request)
     {
+        $data = $request->session()->all();
+        echo $data;
         $session_id = session()->getId();
         $subTask11 = $request->post("subTask11");
         $subTask12 = $request->post("subTask12");
