@@ -85,6 +85,7 @@ class TaskController extends Controller
 
     public function store_mainTask1(Request $request)
     {
+        $worker_id=$request->session()->get('MWId');
         $session_id = session()->getId();
         $subTask11 = $request->post("subTask11");
         $subTask12 = $request->post("subTask12");
@@ -96,8 +97,7 @@ class TaskController extends Controller
         {
             $subTask13 = null;
         }
-        $worker_id=Session::get('MWId');
-        echo $worker_id;
+
 
         $type_id=Session::get('type');
 
