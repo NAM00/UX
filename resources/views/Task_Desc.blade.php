@@ -168,3 +168,15 @@
 </body>
 
 </html>
+<script>
+    var typeIdValue = document.getElementById("typeId").value;
+
+    sessionStorage.setItem("typeIdValue", typeIdValue);
+
+    var storedValue = sessionStorage.getItem("typeIdValue");
+
+
+    console.log(storedValue);
+
+
+    </script>
