@@ -14,7 +14,7 @@
         margin: 0;
         }
         .pdesign1{
-        font-family: Hahmlet;
+            font-family: Hahmlet, serif;
         font-size: 32px;
         font-weight: 500;
         line-height: 18px;
@@ -33,7 +33,7 @@
 
         }
         .pdesign3{
-        font-family: Hahmlet;
+            font-family: Hahmlet, serif;
         font-size: 32px;
         font-weight: 500;
         line-height: 18px;
@@ -53,7 +53,7 @@
 
 
         .pdesign2{
-        font-family: Hahmlet;
+            font-family: Hahmlet, serif;
         font-size: 26px;
         font-weight: 500;
         line-height: 36px;
@@ -94,7 +94,7 @@
             float: left;
             margin-right: 200px;
             background: #0000FF;
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 18px;
             font-weight: 700;
             line-height: 18px;
@@ -117,7 +117,7 @@
 
         .pdesign{
 
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 40px;
@@ -129,7 +129,7 @@
         }
 
         td {
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 32px;
             font-weight: 500;
             line-height: 34px;
@@ -143,7 +143,7 @@
             color: #000000;
         }
         th {
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 24px;
             font-weight: 600;
             line-height: 18px;
@@ -186,7 +186,7 @@
         }
 
         .format{
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 16px;
             font-weight: 400;
             line-height: 16px;
@@ -201,7 +201,7 @@
             top: 1556px;
             left: 393px;
             gap: 8px;
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 40px;
@@ -271,7 +271,7 @@
             background: #0000FFB0;
             color: #FFFFFF;
             display: inline-block;
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 24px;
             font-weight: 700;
             line-height: 36px;
@@ -299,7 +299,7 @@
             background:  #66B600;
             color: #FFFFFF;
             display: inline-block;
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 24px;
             font-weight: 700;
             line-height: 36px;
