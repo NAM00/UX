@@ -15,7 +15,7 @@
         margin: 0;
     }
     .pdesign1{
-        font-family: IBM Plex Sans;
+        font-family: Hahmlet;
         font-size: 32px;
         font-weight: 500;
         line-height: 18px;
@@ -28,7 +28,7 @@
     .side-bar {
         width: 296px;
         /* height: 4894px; */
-        font-family: IBM Plex Sans, sans-serif;
+        font-family: Hahmlet, sans-serif;
         font-size: 20px;
         font-weight: 400;
         line-height: 18px;
@@ -61,7 +61,7 @@
         float:right;
         margin-right: 250px;
         background: #0000FF;
-        font-family: IBM Plex Sans;
+        font-family: Hahmlet;
         font-size: 18px;
         font-weight: 700;
         line-height: 18px;

@@ -14,7 +14,7 @@
             margin: 0;
         }
         .pdesign1{
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 32px;
             font-weight: 500;
             line-height: 18px;
@@ -33,7 +33,7 @@
 
         }
         .pdesign3{
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 32px;
             font-weight: 500;
             line-height: 18px;
@@ -53,7 +53,7 @@
 
 
         .pdesign2{
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 26px;
             font-weight: 500;
             line-height: 36px;
@@ -64,7 +64,7 @@
         .side-bar {
             width: 296px;
             /* height: 4894px; */
-            font-family: IBM Plex Sans, sans-serif;
+            font-family: Hahmlet, sans-serif;
             font-size: 20px;
             font-weight: 400;
             line-height: 18px;
@@ -96,7 +96,7 @@
             float: left;
             margin-right: 200px;
             background: #0000FF;
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 18px;
             font-weight: 700;
             line-height: 18px;
@@ -119,7 +119,7 @@
 
         .pdesign{
 
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 24px;
             font-weight: 400;
             line-height: 40px;
@@ -131,7 +131,7 @@
         }
 
         td {
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 32px;
             font-weight: 500;
             line-height: 34px;
@@ -145,7 +145,7 @@
             color: #000000;
         }
         th {
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 24px;
             font-weight: 600;
             line-height: 18px;
@@ -188,7 +188,7 @@
         }
 
         .format{
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 16px;
             font-weight: 400;
             line-height: 16px;
@@ -273,7 +273,7 @@
             background: #0000FFB0;
             color: #FFFFFF;
             display: inline-block;
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 24px;
             font-weight: 700;
             line-height: 36px;
@@ -301,7 +301,7 @@
             background:  #66B600;
             color: #FFFFFF;
             display: inline-block;
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 24px;
             font-weight: 700;
             line-height: 36px;
