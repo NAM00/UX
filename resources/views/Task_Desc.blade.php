@@ -14,7 +14,7 @@
             margin: 0;
         }
         .pdesign1{
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 32px;
             font-weight: 500;
             line-height: 18px;
@@ -28,7 +28,7 @@
         .side-bar {
             width: 296px;
             /* height: 4894px; */
-            font-family: Hahmlet, sans-serif;
+            font-family: Hahmlet, serif;
             font-size: 20px;
             font-weight: 400;
             line-height: 18px;
@@ -58,7 +58,7 @@
             float:right;
             margin-right: 250px;
             background: #0000FF;
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 18px;
             font-weight: 700;
             line-height: 18px;
@@ -85,7 +85,7 @@
             height: 108px;
             top: 209px;
             left: 393px; */
-            font-family: Hahmlet;
+            font-family: Hahmlet, serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 40px;
