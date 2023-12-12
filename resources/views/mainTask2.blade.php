@@ -119,7 +119,7 @@
         .pdesign{
 
             font-family: Hahmlet, serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 40px;
             letter-spacing: 0.01em;
@@ -145,7 +145,7 @@
         }
         th {
             font-family: Hahmlet, serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
             line-height: 18px;
             letter-spacing: 0em;
@@ -203,7 +203,7 @@
             left: 393px;
             gap: 8px;
             font-family: Hahmlet, serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 40px;
             letter-spacing: 0.01em;
@@ -273,7 +273,7 @@
             color: #FFFFFF;
             display: inline-block;
             font-family: Hahmlet, serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
             line-height: 36px;
             letter-spacing: 0.1599999964237213px;
@@ -301,7 +301,7 @@
             color: #FFFFFF;
             display: inline-block;
             font-family: Hahmlet, serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
             line-height: 36px;
             letter-spacing: 0.1599999964237213px;

@@ -87,7 +87,7 @@
             top: 209px;
             left: 393px; */
             font-family: Hahmlet, serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 40px;
             letter-spacing: 0.01em;
