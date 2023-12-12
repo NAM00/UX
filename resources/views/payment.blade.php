@@ -15,7 +15,7 @@
             margin: 0;
         }
         .pdesign1{
-            font-family: IBM Plex Sans;
+            font-family: Hahmlet;
             font-size: 32px;
             font-weight: 500;
             line-height: 18px;
@@ -28,7 +28,7 @@
         .side-bar {
             width: 296px;
             /* height: 4894px; */
-            font-family: IBM Plex Sans, sans-serif;
+            font-family: Hahmlet, sans-serif;
             font-size: 20px;
             font-weight: 400;
             line-height: 18px;
@@ -60,7 +60,7 @@
             float: right;
             background: #0000FF;
             margin-right: 200px;
-            font-family: 'IBM Plex Sans', serif; /* Make sure to use single or double quotes for font family names with spaces */
+            font-family: 'Hahmlet', serif; /* Make sure to use single or double quotes for font family names with spaces */
             font-size: 18px;
             font-weight: 700;
             line-height: 18px; /* You may want to adjust this based on your design */
