@@ -15,6 +15,21 @@ class CreateTasksTable extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
+            $table->string("sub_task_11")->default(0);
+            $table->string("sub_task_12")->default(0);
+            $table->string("sub_task_13")->nullable();
+            $table->string("sub_task_21")->default(0);
+            $table->string("sub_task_22")->default(0);
+            $table->string("sub_task_23")->nullable();
+            $table->string("sub_task_31")->default(0);
+            $table->string("sub_task_32")->default(0);
+            $table->string("sub_task_33")->nullable();
+            $table->string("sub_task_41")->default(0);
+            $table->string("sub_task_42")->default(0);
+            $table->string("sub_task_43")->nullable();
+            $table->string("worker_id");
+            $table->string("type_id");
+            $table->string("session_id")->unique();
             $table->timestamps();
         });
     }

@@ -7,7 +7,101 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Hahmlet' rel='stylesheet'>
     <title>Task Description</title>
+    <style>
+        *body{
+            padding: 0;
+            margin: 0;
+        }
+        .pdesign1{
+            font-family: Hahmlet, serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+
+
+        }
+
+
+        .side-bar {
+            width: 296px;
+            /* height: 4894px; */
+            font-family: Hahmlet, serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+            width: Hug (221px);
+            height: Hug (424px);
+            top: 167px;
+            left: 38px;
+            padding: 5px;
+            gap: 8px;
+
+
+        }
+        .side-bar1
+        {
+            margin-left:40px ;
+        }
+
+        .selected {
+            color: blue;
+
+        }
+
+
+        .align-right{
+            float:right;
+            margin-right: 250px;
+            background: #0000FF;
+            font-family: Hahmlet, serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.1599999964237213px;
+            text-align: left;
+
+
+
+        }
+
+
+        .img1 {
+            margin-top: 31px;
+            padding-right: 10px;
+
+
+        }
+
+
+
+
+        .pdesign{
+            /* width: 938px;
+            height: 108px;
+            top: 209px;
+            left: 393px; */
+            font-family: Hahmlet, serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.01em;
+            text-align: left;
+
+
+
+        }
+
+
+
+
+    </style>
+
 </head>
 
 <body>
@@ -18,10 +112,10 @@
             <div class="side-bar">
                 <br><br><br>
                 <ul>
-                    <p id="item1" class="selected"><img src="colours.jpg" class="img1">Task Description</p>
-                    <p id="item"><img src="white.jpg" class="img1">Main Task</p>
-                    <p id="item"><img src="white.jpg" class="img1">Survey</p>
-                    <p id="item"><img src="white.jpg" class="img1">Payment Code</p>
+                    <p id="item1" class="selected"><img src="../colours.jpg" class="img1">Task Description</p>
+                    <p id="item"><img src="../white.jpg" class="img1">Main Task</p>
+                    <p id="item"><img src="../white.jpg" class="img1">Survey</p>
+                    <p id="item"><img src="../white.jpg" class="img1">Payment Code</p>
                 </ul>
             </div>
         </div>
@@ -32,38 +126,27 @@
                 <h1 class='pdesign1'><b>Task Description</b></h1><br><br>
 
                 <div class='pdesign'>
-                    <p>You will receive three sets of information. Your <b>Goal</b> is to correctly <b>classify</b> the
-                        given <br>data by
-                        comparing values from the questions to a <b>reference chart</b>. There are 4 <br> possible
-                        Categories/Classes - Temperature, Humidity, Pressure or Rain, from which<br> you have to
-                        identify
-                        the right one. You will answer four questions using three steps <br>for 4 tasks.<br><br>
+                    <input type="hidden" id="typeId" name="typeId" value="{{$type}}">
+                    <input type="hidden" id="workerId" name="workerId" value="{{$workerId}}">
+
+                    <br>You have to select <b>One</b> answer from <b>Four</b> options -<b> Temperature, Humidity,<br> Pressure & Rain.</b>
+                        <br><br>
+                        You will be given a range of values for temperature, humidity, pressure, and rain, along <br>  with standard
+                        <b style="color:#0075FF">Reference Ranges</b> for each. Your job is to compare the <b style="color:#D48C00"> Given Values</b> <br>
+                        with the <b style="color:#0075FF">Reference Values</b> and choose the correct option.<br><br>
                         <b>Step 1:</b><br><br>
-                        We will show you one minimum and maximum values’ range, and you will compare <br>these values
-                        with
-                        the reference chart. Then you have to select a category.<br><br>
-                        <b>Step 2:</b><br><br>
-                        In the step 2, we will show you a sensor name and a channel name. For answering<br> your
-                        question,
-                        you should check if there is any relation among the names of the <br>categories and
-                        sensor/channel
-                        names.<br><br>
-                        <b> Sensor names get more priority than channel names.</b><br><br>
-                        <b>Step 3:</b>
-                        If you consider that you need more information for a decision of the category, we<br> present
-                        you
-                        the reference median value for all categories, as well as the median <br>value of the respective
-                        category. You can compare the given value with the <br>reference chart.
-                    </p><br><br>
-                    <p style="color:red">Always Look at the green tips boxes before selecting an option. you will
-                        get<br>
-                        important
-                        instructions on how to select the correct answer!</p>
-
-
-
-
-
+                        You will have two sets of ranges: one showing the <b style="color:#0075FF"> Reference</b> Maximum and Minimum<br> values for temperature, humidity, pressure, and rain, and the other indicating the<br> <b style="color:#D48C00">Given</b> Maximum and Minimum range for the correct option. Your task is to determine <br>which category the <b style="color:#D48C00">Given Range</b> falls into within the  <b style="color:#0075FF"> Reference values</b>.
+                        <br><br><b>Step 2:</b><br><br>
+                        You will receive a <b>Sensor Name</b> associated with the correct option. Your task is to<br> check if the <b>Sensor Name</b> has any direct similarity with any of the four options.<br><br>
+{{--                        <b style="font-size: 32px;color:red"> Sensor names get more priority than channel names.</b><br><br>--}}
+                        <b>Step 3:</b><br><br>
+                        You will be provided with two sets of information: the <b style="color:#0075FF"> Reference Value</b> range <br> for each option and the <b style="color:#D48C00">Given Value</b> for the correct option. Once again, your task <br> is to determine in which range the <b style="color:#D48C00">Given Value</b>  falls within the <b style="color:#0075FF"> Reference Value</b><br> range.
+                        <br><br>
+                        <b style="color:red;font-size: 32px">Always look at the green tips boxes before selecting<br> an option. You will
+                        get important instructions there!!!</b><br>
+                        <p style="margin-left: 250px;"><img src="../arrow.jpeg"></p>
+                        <p style="margin-left: 142px;"><img src="../read_me.jpeg"></p><br>
+                    You have to complete <b>4 tasks</b> to get the payment.
 
                 </div>
             </div>
@@ -88,3 +171,23 @@
 </body>
 
 </html>
+<script>
+    var typeIdValue = document.getElementById("typeId").value;
+
+    sessionStorage.setItem("typeIdValue", typeIdValue);
+
+    var storedValue = sessionStorage.getItem("typeIdValue");
+
+
+    console.log(storedValue);
+
+    var workerIdValue = document.getElementById("workerId").value;
+
+    sessionStorage.setItem("workerIdValue", workerIdValue);
+
+    var storedValuewd = sessionStorage.getItem("workerIdValue");
+
+    console.log(workerIdValue);
+
+
+    </script>
